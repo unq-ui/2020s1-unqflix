@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 interface Content : Id {
     var description: String

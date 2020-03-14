@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 data class Season(
     override val id: String,

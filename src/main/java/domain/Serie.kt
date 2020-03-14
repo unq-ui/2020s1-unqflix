@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 data class Serie(
     override val id: String,

@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 data class Chapter(
     override val id: String,

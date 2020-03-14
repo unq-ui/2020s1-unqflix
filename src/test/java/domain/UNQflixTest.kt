@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 import org.junit.Test
 import org.junit.Assert.*
@@ -388,6 +388,26 @@ class UNQflixTest {
         unQflix.deleteChapter("ser_1", "sea_0", "cha_1")
 
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 1)
+    }
+
+    @Test
+    fun deleteBanner() {
+        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        assertEquals(unQflix.series.size, 0)
+
+        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
+        val serie2 = Serie("ser_2", "ser2", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
+
+        unQflix.addBanner(serie);
+        unQflix.addBanner(serie2);
+
+        assertEquals(unQflix.banners.size, 2)
+
+        unQflix.deleteBanner(serie2);
+
+        assertEquals(unQflix.banners.size, 1)
+        assertTrue(unQflix.banners.contains(serie))
+        assertFalse(unQflix.banners.contains(serie2))
     }
 
     @Test

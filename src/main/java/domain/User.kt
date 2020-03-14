@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 data class User(
     override var id: String,

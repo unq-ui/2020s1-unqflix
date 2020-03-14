@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 class UNQflix(
     val movies: MutableList<Movie>,
@@ -100,6 +100,10 @@ class UNQflix(
         this.series.find { it.id == idSerie }
             ?.let { it.deleteChapter(idSeason, idChapter) }
             ?: run { throw NotFoundException("Serie", "id", idSerie)}
+    }
+
+    fun deleteBanner(banner: Content) {
+        this.banners.remove(banner)
     }
 
     fun searchMovies(text: String): List<Movie> {

@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 class ExistException(val classError: String, val prop: String, val value: String) : Exception("""Error: Exist another $classError with $prop = $value""")
 

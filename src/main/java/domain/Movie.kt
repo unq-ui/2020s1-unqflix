@@ -1,4 +1,4 @@
-package dominio
+package domain
 
 data class Movie(
     override val id: String,
