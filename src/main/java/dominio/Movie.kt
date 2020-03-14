@@ -7,9 +7,9 @@ data class Movie(
     override var poster: String,
     override var state: ContentState,
     var video: String,
-    var duration: Number,
-    val actors: MutableCollection<String>,
-    val directors: MutableCollection<String>,
-    val categories: MutableCollection<Category>,
-    override val relatedContent: MutableCollection<Content>
+    var duration: Int,
+    var actors: MutableList<String>,
+    var directors: MutableList<String>,
+    var categories: MutableList<Category>,
+    override var relatedContent: MutableList<Content>
 ) : Content, Id

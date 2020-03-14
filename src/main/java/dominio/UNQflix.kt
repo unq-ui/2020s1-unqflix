@@ -1,14 +1,11 @@
 package dominio
 
-class ExistException(val classError: String, val prop: String, val value: String) : Exception("""Error: Exist another $classError with $prop = $value""")
-class NotFoundException(val classError: String, val prop: String, val value: String) : Exception("""Error: Not found $classError with $prop = $value""")
-
 class UNQflix(
-    val movies: MutableCollection<Movie>,
-    val series: MutableCollection<Serie>,
-    val categories: MutableCollection<Category>,
-    val users: MutableCollection<User>,
-    val banners: MutableCollection<Content>
+    val movies: MutableList<Movie>,
+    val series: MutableList<Serie>,
+    val categories: MutableList<Category>,
+    val users: MutableList<User>,
+    val banners: MutableList<Content>
 ) {
 
     var nextUserId = 0

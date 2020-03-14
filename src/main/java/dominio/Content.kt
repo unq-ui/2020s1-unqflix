@@ -5,5 +5,5 @@ interface Content : Id {
     var poster: String
     var title: String
     var state: ContentState
-    val relatedContent: MutableCollection<Content>
+    var relatedContent: MutableList<Content>
 }

@@ -5,7 +5,7 @@ data class Season(
     var title: String,
     var description: String,
     var poster: String,
-    val chapters: MutableCollection<Chapter>
+    var chapters: MutableList<Chapter>
 ) : Id {
     fun addChapter(chapter: Chapter) {
         this.chapters.firstOrNull { it.title === chapter.title }

@@ -6,9 +6,9 @@ data class Serie(
     override var description: String,
     override var poster: String,
     override var state: ContentState,
-    val categories: MutableCollection<Category>,
-    val seasons: MutableCollection<Season>,
-    override val relatedContent: MutableCollection<Content>
+    var categories: MutableList<Category>,
+    var seasons: MutableList<Season>,
+    override var relatedContent: MutableList<Content>
 ) : Content, Id  {
     fun addSeason(season: Season) {
         this.seasons.firstOrNull { it.title === season.title }
