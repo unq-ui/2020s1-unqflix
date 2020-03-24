@@ -7,8 +7,8 @@ data class User(
     var image: String,
     var email: String,
     var password: String,
-    val favorites: MutableCollection<Content>,
-    val lastSeen: MutableCollection<Content>
+    val favorites: MutableCollection<Content> = mutableListOf(),
+    val lastSeen: MutableCollection<Content> = mutableListOf()
 ) : Id {
     fun addLastSeen(content: Content) {
         this.lastSeen.find { it.id == content.id }

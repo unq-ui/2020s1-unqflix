@@ -10,9 +10,8 @@ class UNQflixTest {
         val unQflix = UNQflix()
         assertEquals(unQflix.users.size, 0)
 
-        val user = User("1", "user", "1234123412341234", "image", "user@gmail.com", "user", mutableListOf(), mutableListOf())
+        val user = UserBuilder.any()
         unQflix.addUser(user)
-
         assertEquals(unQflix.users.size, 1)
         assertEquals(unQflix.users.first().email, user.email)
     }
@@ -22,7 +21,7 @@ class UNQflixTest {
         val unQflix = UNQflix()
         assertEquals(unQflix.users.size, 0)
 
-        val user = User("1", "user", "1234123412341234", "image", "user@gmail.com", "user", mutableListOf(), mutableListOf())
+        val user = UserBuilder.any()
         unQflix.addUser(user)
         assertFailsWith<ExistException> { unQflix.addUser(user) }
     }
@@ -461,7 +460,7 @@ class UNQflixTest {
         assertEquals(unQflix.users.size, 0)
         assertEquals(unQflix.series.size, 0)
 
-        val user = User("1", "user", "1234123412341234", "image", "user@gmail.com", "user", mutableListOf(), mutableListOf())
+        val user = UserBuilder.any()
         unQflix.addUser(user)
 
         assertEquals(unQflix.users.size, 1)
@@ -483,7 +482,7 @@ class UNQflixTest {
         assertEquals(unQflix.users.size, 0)
         assertEquals(unQflix.series.size, 0)
 
-        val user = User("1", "user", "1234123412341234", "image", "user@gmail.com", "user", mutableListOf(), mutableListOf())
+        val user = UserBuilder.any()
         unQflix.addUser(user)
 
         assertEquals(unQflix.users.size, 1)
@@ -509,7 +508,7 @@ class UNQflixTest {
         assertEquals(unQflix.users.size, 0)
         assertEquals(unQflix.series.size, 0)
 
-        val user = User("1", "user", "1234123412341234", "image", "user@gmail.com", "user", mutableListOf(), mutableListOf())
+        val user = UserBuilder.any()
         unQflix.addUser(user)
 
         assertEquals(unQflix.users.size, 1)
