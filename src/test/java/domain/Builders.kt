@@ -54,3 +54,21 @@ object ChapterBuilder : Builder {
         thumbnail: String = "thumbnail"
     ) = Chapter(id, title, description, duration, video, thumbnail)
 }
+
+object MovieBuilder : Builder {
+    override fun any() = with()
+    fun with(
+        id: String = "mov_1",
+        title: String = "mov1",
+        description: String = "mov1",
+        poster: String = "mov1",
+        state: ContentState = Available(),
+        video: String = "video",
+        duration: Int = 210,
+        actors: MutableList<String> = mutableListOf(),
+        directors: MutableList<String> = mutableListOf(),
+        categories: MutableList<Category> = mutableListOf(),
+        relatedContent: MutableList<Content> = mutableListOf()
+    ) = Movie(id, title, description, poster, state, video, duration, actors, directors, categories, relatedContent)
+}
+

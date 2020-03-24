@@ -10,7 +10,7 @@ class UNQFlixMovieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.movies.size, 0)
 
-        val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val movie = MovieBuilder.any()
         unQflix.addMovie(movie)
 
         assertEquals(unQflix.movies.size, 1)
@@ -22,9 +22,9 @@ class UNQFlixMovieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.movies.size, 0)
 
-        val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val movie = MovieBuilder.any()
         unQflix.addMovie(movie)
-        assertThrows<ExistException> { unQflix.addMovie(movie) }
+        assertThrows<ExistException> { unQflix.addMovie(movie.copy()) }
     }
 
     @Test
@@ -32,7 +32,7 @@ class UNQFlixMovieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.movies.size, 0)
 
-        val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val movie = MovieBuilder.with(id = "mov_1")
         unQflix.addMovie(movie)
 
         assertEquals(unQflix.movies.size, 1)
@@ -47,7 +47,7 @@ class UNQFlixMovieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.movies.size, 0)
 
-        val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val movie = MovieBuilder.with(id = "mov_1")
         unQflix.addMovie(movie)
 
         assertEquals(unQflix.movies.size, 1)

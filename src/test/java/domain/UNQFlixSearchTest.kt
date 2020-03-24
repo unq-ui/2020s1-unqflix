@@ -8,14 +8,14 @@ class UNQFlixSearchTest {
     fun searchMovies() {
         val unqflix = UNQFlix()
 
-        val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
-        val movie1 = Movie("mov_2", "mov2", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
-        val movie2 = Movie("mov_3", "mov3", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
-        val movie3 = Movie("mov_4", "pepe", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
-        unqflix.addMovie(movie)
+        val movie1 = MovieBuilder.with(id = "mov_1", title = "mov1")
+        val movie2 = MovieBuilder.with(id = "mov_2", title = "mov2")
+        val movie3 = MovieBuilder.with(id = "mov_3", title = "mov3")
+        val movie4 = MovieBuilder.with(id = "mov_4", title = "pepe")
         unqflix.addMovie(movie1)
         unqflix.addMovie(movie2)
         unqflix.addMovie(movie3)
+        unqflix.addMovie(movie4)
 
         assertEquals(unqflix.movies.size, 4)
 
@@ -31,12 +31,12 @@ class UNQFlixSearchTest {
         val unqflix = UNQFlix()
         assertEquals(unqflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie2 = Serie("ser_2", "ser2", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie3 = Serie("ser_3", "ser3", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie4 = Serie("ser_4", "lalala", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie1 = SerieBuilder.with(id = "ser_1", title = "ser1")
+        val serie2 = SerieBuilder.with(id = "ser_2", title = "ser2")
+        val serie3 = SerieBuilder.with(id = "ser_3", title = "ser3")
+        val serie4 = SerieBuilder.with(id = "ser_4", title = "lalala")
 
-        unqflix.addSerie(serie)
+        unqflix.addSerie(serie1)
         unqflix.addSerie(serie2)
         unqflix.addSerie(serie3)
         unqflix.addSerie(serie4)
