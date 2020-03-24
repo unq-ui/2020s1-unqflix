@@ -24,7 +24,7 @@ private fun getCategories(): MutableList<Category> {
     return categories.map { Category(it.name) }.toMutableList()
 }
 
-private fun lookUpCategories(unqFlix: UNQflix, caregories: List<String>): MutableList<Category> {
+private fun lookUpCategories(unqFlix: UNQFlix, caregories: List<String>): MutableList<Category> {
     return caregories.map { c ->
         unqFlix.categories.find { it.name == c }
             ?: unqFlix.categories[unqFlix.categories.size -1]
@@ -44,7 +44,7 @@ private fun getMovies(): MutableList<MovieData> {
     return Gson().fromJson(moviesString, movieDataType)
 }
 
-private fun addAllMovies(unqFlix: UNQflix) {
+private fun addAllMovies(unqFlix: UNQFlix) {
     val movies = getMovies()
     movies.forEach {
         unqFlix.addMovie(Movie(unqFlix.getNewMovieId(), it.title, it.desciption, it.poster, getRandomState(), it.video, it.duration, it.actores.toMutableList(), it.directors.toMutableList(), lookUpCategories(unqFlix, it.caregories), mutableListOf()))
@@ -57,7 +57,7 @@ private fun getSeries(): MutableList<SerieData> {
     return Gson().fromJson(seriesString, serieDataType)
 }
 
-private fun addAllSeries(unqFlix: UNQflix) {
+private fun addAllSeries(unqFlix: UNQFlix) {
     val series = getSeries()
     series.forEach {
         unqFlix.addSerie(
@@ -75,7 +75,7 @@ private fun addAllSeries(unqFlix: UNQflix) {
     }
 }
 
-private fun getSeasons(unqFlix: UNQflix, seasons: List<SeasonData>): MutableList<Season> {
+private fun getSeasons(unqFlix: UNQFlix, seasons: List<SeasonData>): MutableList<Season> {
     return seasons.map {
         Season(
             unqFlix.getNewSeasonId(),
@@ -87,13 +87,13 @@ private fun getSeasons(unqFlix: UNQflix, seasons: List<SeasonData>): MutableList
     }.toMutableList()
 }
 
-private fun getChapters(unqFlix: UNQflix, chapters: List<EpisodeData>): MutableList<Chapter> {
+private fun getChapters(unqFlix: UNQFlix, chapters: List<EpisodeData>): MutableList<Chapter> {
     return chapters.map {
         Chapter(unqFlix.getNewChapterId(), it.title, it.desciption, it.duration, it.video, it.thumbnail)
     }.toMutableList()
 }
 
-private fun addBanners(unqFlix: UNQflix) {
+private fun addBanners(unqFlix: UNQFlix) {
     val allContent = mutableListOf<Content>()
     allContent.addAll(unqFlix.movies)
     allContent.addAll(unqFlix.series)
@@ -103,7 +103,7 @@ private fun addBanners(unqFlix: UNQflix) {
     }
 }
 
-private fun createRelatedContent(unqFlix: UNQflix) {
+private fun createRelatedContent(unqFlix: UNQFlix) {
     val allContent = mutableListOf<Content>()
     allContent.addAll(unqFlix.movies)
     allContent.addAll(unqFlix.series)
@@ -119,8 +119,8 @@ private fun getRelatedContent(allContent: MutableList<Content>, content: Content
     return relatedContent
 }
 
-fun getUNQFlix(): UNQflix {
-    val unqFlix = UNQflix(mutableListOf(), mutableListOf(), getCategories(), mutableListOf(), mutableListOf())
+fun getUNQFlix(): UNQFlix {
+    val unqFlix = UNQFlix(mutableListOf(), mutableListOf(), getCategories(), mutableListOf(), mutableListOf())
     addAllMovies(unqFlix)
     addAllSeries(unqFlix)
     createRelatedContent(unqFlix)

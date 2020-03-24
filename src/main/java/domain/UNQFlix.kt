@@ -1,6 +1,6 @@
 package domain
 
-class UNQflix(
+class UNQFlix(
     val movies: MutableList<Movie> = mutableListOf(),
     val series: MutableList<Serie> = mutableListOf(),
     val categories: MutableList<Category> = mutableListOf(),
