@@ -8,7 +8,7 @@ class UNQflixTest {
 
     @Test
     fun addUser() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.users.size, 0)
 
         val user = User("1", "user", "1234123412341234", "image", "user@gmail.com", "user", mutableListOf(), mutableListOf())
@@ -20,7 +20,7 @@ class UNQflixTest {
 
     @Test
     fun addUserTwoTimesSameUser() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.users.size, 0)
 
         val user = User("1", "user", "1234123412341234", "image", "user@gmail.com", "user", mutableListOf(), mutableListOf())
@@ -30,7 +30,7 @@ class UNQflixTest {
 
     @Test
     fun addCategory() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.categories.size, 0)
 
         val category = Category("Terror");
@@ -42,7 +42,7 @@ class UNQflixTest {
 
     @Test
     fun addCategoryTwoTimesSameCategory() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.categories.size, 0)
 
         val category = Category("Terror");
@@ -52,7 +52,7 @@ class UNQflixTest {
 
     @Test
     fun addMovie() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.movies.size, 0)
 
         val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -64,7 +64,7 @@ class UNQflixTest {
 
     @Test
     fun addMovieTwoTimesSameMovie() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.movies.size, 0)
 
         val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -74,7 +74,7 @@ class UNQflixTest {
 
     @Test
     fun addSerie() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -86,7 +86,7 @@ class UNQflixTest {
 
     @Test
     fun addSerieTwoTimesSameSerie() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -96,7 +96,7 @@ class UNQflixTest {
 
     @Test
     fun addSeason() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -114,7 +114,7 @@ class UNQflixTest {
 
     @Test
     fun addSeasonWithoutSeries() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
@@ -123,7 +123,7 @@ class UNQflixTest {
 
     @Test
     fun addChapter() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -148,7 +148,7 @@ class UNQflixTest {
 
     @Test
     fun addChapterWithoutSeries() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val chapter = Chapter("cha_0", "chapter", "chapter", 60, "video", "thumbnail")
@@ -157,7 +157,7 @@ class UNQflixTest {
 
     @Test
     fun addBanner() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -183,7 +183,7 @@ class UNQflixTest {
 
     @Test
     fun getNewUserId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.getNewUserId(), "u_0")
         assertEquals(unQflix.getNewUserId(), "u_1")
         assertEquals(unQflix.getNewUserId(), "u_2")
@@ -192,7 +192,7 @@ class UNQflixTest {
 
     @Test
     fun getNewMovieId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.getNewMovieId(), "mov_0")
         assertEquals(unQflix.getNewMovieId(), "mov_1")
         assertEquals(unQflix.getNewMovieId(), "mov_2")
@@ -201,7 +201,7 @@ class UNQflixTest {
 
     @Test
     fun getNewSerieId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.getNewSerieId(), "ser_0")
         assertEquals(unQflix.getNewSerieId(), "ser_1")
         assertEquals(unQflix.getNewSerieId(), "ser_2")
@@ -210,7 +210,7 @@ class UNQflixTest {
 
     @Test
     fun getNewSeasonId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.getNewSeasonId(), "sea_0")
         assertEquals(unQflix.getNewSeasonId(), "sea_1")
         assertEquals(unQflix.getNewSeasonId(), "sea_2")
@@ -219,7 +219,7 @@ class UNQflixTest {
 
     @Test
     fun getNewChapterId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.getNewChapterId(), "cha_0")
         assertEquals(unQflix.getNewChapterId(), "cha_1")
         assertEquals(unQflix.getNewChapterId(), "cha_2")
@@ -228,7 +228,7 @@ class UNQflixTest {
 
     @Test
     fun deleteMovie() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.movies.size, 0)
 
         val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -243,7 +243,7 @@ class UNQflixTest {
 
     @Test
     fun deleteMovieNotFoundId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.movies.size, 0)
 
         val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -258,7 +258,7 @@ class UNQflixTest {
 
     @Test
     fun deleteSerie() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -274,7 +274,7 @@ class UNQflixTest {
 
     @Test
     fun deleteSerieNotFoundId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -290,7 +290,7 @@ class UNQflixTest {
 
     @Test
     fun deleteSeason() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -312,7 +312,7 @@ class UNQflixTest {
 
     @Test
     fun deleteSeasonNotFoundId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -334,7 +334,7 @@ class UNQflixTest {
 
     @Test
     fun deleteChapter() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -363,7 +363,7 @@ class UNQflixTest {
 
     @Test
     fun deleteChapterNotFoundId() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -392,7 +392,7 @@ class UNQflixTest {
 
     @Test
     fun deleteBanner() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -412,7 +412,7 @@ class UNQflixTest {
 
     @Test
     fun searchMovies() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
 
         val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf());
         val movie1 = Movie("mov_2", "mov2", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -434,7 +434,7 @@ class UNQflixTest {
 
     @Test
     fun searchSeries() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.series.size, 0)
 
         val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf());
@@ -458,7 +458,7 @@ class UNQflixTest {
 
     @Test
     fun addLastSeen() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.users.size, 0)
         assertEquals(unQflix.series.size, 0)
 
@@ -480,7 +480,7 @@ class UNQflixTest {
 
     @Test
     fun addLastSeenTwoTimes() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.users.size, 0)
         assertEquals(unQflix.series.size, 0)
 
@@ -506,7 +506,7 @@ class UNQflixTest {
 
     @Test
     fun addOrDeleteFav() {
-        val unQflix = UNQflix(mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
+        val unQflix = UNQflix()
         assertEquals(unQflix.users.size, 0)
         assertEquals(unQflix.series.size, 0)
 

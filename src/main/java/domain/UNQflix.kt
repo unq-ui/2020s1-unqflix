@@ -1,11 +1,11 @@
 package domain
 
 class UNQflix(
-    val movies: MutableList<Movie>,
-    val series: MutableList<Serie>,
-    val categories: MutableList<Category>,
-    val users: MutableList<User>,
-    val banners: MutableList<Content>
+    val movies: MutableList<Movie> = mutableListOf(),
+    val series: MutableList<Serie> = mutableListOf(),
+    val categories: MutableList<Category> = mutableListOf(),
+    val users: MutableList<User> = mutableListOf(),
+    val banners: MutableList<Content> = mutableListOf()
 ) {
 
     var nextUserId = 0
