@@ -1,11 +1,10 @@
 package domain
 
-import org.junit.Test
-import org.junit.Assert.*
+import org.junit.jupiter.api.Test
 import kotlin.test.assertFailsWith
+import org.junit.jupiter.api.Assertions.*
 
 class UNQflixTest {
-
     @Test
     fun addUser() {
         val unQflix = UNQflix()
