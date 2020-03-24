@@ -1,5 +1,9 @@
 package domain
 
+abstract class ContentState()
+class Available : ContentState()
+class Unavailable : ContentState()
+
 interface Content : Id {
     var description: String
     var poster: String
