@@ -1,6 +1,6 @@
 package domain
 
-abstract class ContentState()
+abstract class ContentState
 class Available : ContentState()
 class Unavailable : ContentState()
 

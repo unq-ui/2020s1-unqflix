@@ -15,114 +15,114 @@ class UNQFlix(
     var nextChapterId = 0
 
     fun getNewUserId(): String {
-        val id = this.nextUserId++
+        val id = nextUserId++
         return """u_$id"""
     }
 
     fun getNewMovieId(): String {
-        val id = this.nextMovieId++
+        val id = nextMovieId++
         return """mov_$id"""
     }
 
     fun getNewSerieId(): String {
-        val id = this.nextSerieId++
+        val id = nextSerieId++
         return """ser_$id"""
     }
 
     fun getNewSeasonId(): String {
-        val id = this.nextSeasonId++
+        val id = nextSeasonId++
         return """sea_$id"""
     }
 
     fun getNewChapterId(): String {
-        val id = this.nextChapterId++
+        val id = nextChapterId++
         return """cha_$id"""
     }
 
     fun addUser(user: User) {
-        this.users.firstOrNull { it.email === user.email }
+        users.firstOrNull { it.email === user.email }
             ?.let { throw ExistException("User", "email", user.email) }
-            ?: run { this.users.add(user) }
+            ?: run { users.add(user) }
     }
 
     fun addCategory(category: Category) {
-        this.categories.firstOrNull { it.name === category.name }
+        categories.firstOrNull { it.name === category.name }
             ?.let { throw ExistException("Category", "name", category.name) }
-            ?: run { this.categories.add(category) }
+            ?: run { categories.add(category) }
     }
 
     fun addMovie(movie : Movie) {
-        this.movies.firstOrNull { it.title === movie.title }
+        movies.firstOrNull { it.title === movie.title }
             ?.let { throw ExistException("Movie", "title", movie.title) }
-            ?: run { this.movies.add(movie) }
+            ?: run { movies.add(movie) }
     }
 
     fun addSerie(serie: Serie) {
-        this.series.firstOrNull { it.title === serie.title }
+        series.firstOrNull { it.title === serie.title }
             ?.let { throw ExistException("Serie", "title", serie.title) }
-            ?: run { this.series.add(serie) }
+            ?: run { series.add(serie) }
     }
 
     fun addSeason(idSerie: String, season: Season) {
-        this.series.find { it.id == idSerie }
+        series.find { it.id == idSerie }
             ?.let { it.addSeason(season) }
             ?: run { throw NotFoundException("Serie", "id", idSerie)}
     }
 
     fun addChapter(idSerie: String, idSeason: String, chapter: Chapter) {
-        this.series.find { it.id == idSerie }
+        series.find { it.id == idSerie }
             ?.let { it.addChapter(idSeason, chapter) }
             ?: run { throw NotFoundException("Serie", "id", idSerie)}
     }
 
     fun addBanner(banner: Content) {
-        if(this.banners.size == 5) {
-            this.banners.remove(this.banners.first())
+        if(banners.size == 5) {
+            banners.remove(banners.first())
         }
-        this.banners.add(banner)
+        banners.add(banner)
     }
 
     fun deleteMovie(movieId: String) {
-        this.movies.removeIf { it.id == movieId}
+        movies.removeIf { it.id == movieId}
     }
 
     fun deleteSerie(serieId: String) {
-        this.series.removeIf { it.id == serieId}
+        series.removeIf { it.id == serieId}
     }
 
     fun deleteSeason(idSerie: String, idSeason: String){
-        this.series.find { it.id == idSerie }
+        series.find { it.id == idSerie }
             ?.let { it.deleteSeason(idSeason) }
             ?: run { throw NotFoundException("Serie", "id", idSerie)}
     }
 
     fun deleteChapter(idSerie: String, idSeason: String, idChapter: String) {
-        this.series.find { it.id == idSerie }
+        series.find { it.id == idSerie }
             ?.let { it.deleteChapter(idSeason, idChapter) }
             ?: run { throw NotFoundException("Serie", "id", idSerie)}
     }
 
     fun deleteBanner(banner: Content) {
-        this.banners.remove(banner)
+        banners.remove(banner)
     }
 
     fun searchMovies(text: String): List<Movie> {
-        return this.movies.filter { it.title.contains(text, true) }
+        return movies.filter { it.title.contains(text, true) }
     }
 
     fun searchSeries(text: String): List<Serie> {
-        return this.series.filter { it.title.contains(text, true) }
+        return series.filter { it.title.contains(text, true) }
     }
 
     fun addLastSeen(idUser: String, idContent: String) {
-        val user = this.getById(users, idUser);
-        val content = this.getContentById(idContent)
+        val user = getById(users, idUser);
+        val content = getContentById(idContent)
         user.addLastSeen(content);
     }
 
     fun addOrDeleteFav(idUser: String, idContent: String) {
-        val user = this.getById<User>(this.users, idUser);
-        val content = this.getContentById(idContent)
+        val user = getById<User>(users, idUser);
+        val content = getContentById(idContent)
         user.addOrDeleteFav(content);
     }
 
@@ -131,8 +131,8 @@ class UNQFlix(
     }
 
     fun getContentById(id: String): Content {
-        if(id.startsWith("mov")) return this.getById(this.movies, id)
-        if(id.startsWith("ser")) return this.getById(this.series, id)
+        if(id.startsWith("mov")) return getById(movies, id)
+        if(id.startsWith("ser")) return getById(series, id)
         throw NotFoundException("Content", "id", id)
     }
 

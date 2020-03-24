@@ -10,14 +10,15 @@ data class User(
     val favorites: MutableCollection<Content> = mutableListOf(),
     val lastSeen: MutableCollection<Content> = mutableListOf()
 ) : Id {
+
     fun addLastSeen(content: Content) {
-        this.lastSeen.find { it.id == content.id }
-            ?: this.lastSeen.add(content)
+        lastSeen.find { it.id == content.id }
+            ?: lastSeen.add(content)
     }
 
     fun addOrDeleteFav(content: Content) {
-        this.favorites.find { it.id == content.id }
-            ?.let { this.favorites.remove(it) }
-            ?: run { this.favorites.add(content) }
+        favorites.find { it.id == content.id }
+            ?.let { favorites.remove(it) }
+            ?: run { favorites.add(content) }
     }
 }
