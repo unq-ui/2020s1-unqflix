@@ -2,7 +2,7 @@ package domain
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
-import kotlin.test.assertFailsWith
+import org.junit.jupiter.api.assertThrows
 
 class UNQFlixCategoryTest {
     @Test
@@ -24,6 +24,6 @@ class UNQFlixCategoryTest {
 
         val category = Category("Terror")
         unQflix.addCategory(category)
-        assertFailsWith<ExistException> { unQflix.addCategory(category) }
+        assertThrows<ExistException> { unQflix.addCategory(category) }
     }
 }

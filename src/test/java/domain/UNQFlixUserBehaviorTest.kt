@@ -16,7 +16,7 @@ class UNQFlixUserBehaviorTest {
         assertEquals(unQflix.users.size, 1)
         assertEquals(user.lastSeen.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.with(id = "ser_1")
         unQflix.addSerie(serie)
         assertEquals(unQflix.series.size, 1)
 
@@ -36,7 +36,7 @@ class UNQFlixUserBehaviorTest {
         assertEquals(unQflix.users.size, 1)
         assertEquals(user.lastSeen.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.with(id = "ser_1")
         unQflix.addSerie(serie)
         assertEquals(unQflix.series.size, 1)
 
@@ -59,7 +59,7 @@ class UNQFlixUserBehaviorTest {
         assertEquals(unQflix.users.size, 1)
         assertEquals(user.favorites.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.with(id = "ser_1")
         unQflix.addSerie(serie)
         assertEquals(unQflix.series.size, 1)
 

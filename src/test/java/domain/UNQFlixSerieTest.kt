@@ -1,7 +1,7 @@
 package domain
 
 import org.junit.jupiter.api.Test
-import kotlin.test.assertFailsWith
+import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.api.Assertions.*
 
 class UNQFlixSerieTest {
@@ -10,7 +10,7 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
@@ -22,9 +22,9 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
-        assertFailsWith<ExistException> { unQflix.addSerie(serie) }
+        assertThrows<ExistException> { unQflix.addSerie(serie.copy()) }
     }
 
     @Test
@@ -32,14 +32,14 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().seasons.size, 0)
 
-        val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
-        unQflix.addSeason("ser_1", season)
+        val season = SeasonBuilder.any()
+        unQflix.addSeason(serie.id, season)
 
         assertEquals(unQflix.series.first().seasons.size, 1)
         assertEquals(unQflix.series.first().seasons.first().title, season.title)
@@ -50,8 +50,8 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
-        assertFailsWith<NotFoundException> {unQflix.addSeason("ser_1", season)}
+        val season = SeasonBuilder.any()
+        assertThrows<NotFoundException> { unQflix.addSeason("ser_1", season) }
     }
 
     @Test
@@ -59,21 +59,21 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().seasons.size, 0)
 
-        val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
-        unQflix.addSeason("ser_1", season)
+        val season = SeasonBuilder.any()
+        unQflix.addSeason(serie.id, season)
 
         assertEquals(unQflix.series.first().seasons.size, 1)
         assertEquals(unQflix.series.first().seasons.first().title, season.title)
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 0)
 
-        val chapter = Chapter("cha_0", "chapter", "chapter", 60, "video", "thumbnail")
-        unQflix.addChapter("ser_1", "sea_0", chapter)
+        val chapter = ChapterBuilder.any()
+        unQflix.addChapter(serie.id, season.id, chapter)
 
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 1)
         assertEquals(unQflix.series.first().seasons.first().chapters.first().title, chapter.title)
@@ -84,8 +84,8 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val chapter = Chapter("cha_0", "chapter", "chapter", 60, "video", "thumbnail")
-        assertFailsWith<NotFoundException> {unQflix.addChapter("ser_1", "sea_0", chapter)}
+        val chapter = ChapterBuilder.any()
+        assertThrows<NotFoundException> { unQflix.addChapter("ser_1", "sea_0", chapter) }
     }
 
     @Test
@@ -93,14 +93,13 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().title, serie.title)
 
-        unQflix.deleteSerie("ser_1")
-
+        unQflix.deleteSerie(serie.id)
         assertEquals(unQflix.series.size, 0)
     }
 
@@ -109,14 +108,13 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.with(id = "ser_1")
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().title, serie.title)
 
         unQflix.deleteSerie("ser_2")
-
         assertEquals(unQflix.series.size, 1)
     }
 
@@ -125,20 +123,19 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().seasons.size, 0)
 
-        val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
-        unQflix.addSeason("ser_1", season)
+        val season = SeasonBuilder.any()
+        unQflix.addSeason(serie.id, season)
 
         assertEquals(unQflix.series.first().seasons.size, 1)
         assertEquals(unQflix.series.first().seasons.first().title, season.title)
 
-        unQflix.deleteSeason("ser_1", "sea_0")
-
+        unQflix.deleteSeason(serie.id, season.id)
         assertEquals(unQflix.series.first().seasons.size, 0)
     }
 
@@ -147,20 +144,19 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.with(id = "ser_1")
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().seasons.size, 0)
 
-        val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
-        unQflix.addSeason("ser_1", season)
+        val season = SeasonBuilder.with(id = "sea_0")
+        unQflix.addSeason(serie.id, season)
 
         assertEquals(unQflix.series.first().seasons.size, 1)
         assertEquals(unQflix.series.first().seasons.first().title, season.title)
 
-        unQflix.deleteSeason("ser_1", "sea_1")
-
+        unQflix.deleteSeason(serie.id, "sea_1")
         assertEquals(unQflix.series.first().seasons.size, 1)
     }
 
@@ -169,27 +165,26 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().seasons.size, 0)
 
-        val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
-        unQflix.addSeason("ser_1", season)
+        val season = SeasonBuilder.any()
+        unQflix.addSeason(serie.id, season)
 
         assertEquals(unQflix.series.first().seasons.size, 1)
         assertEquals(unQflix.series.first().seasons.first().title, season.title)
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 0)
 
-        val chapter = Chapter("cha_0", "chapter", "chapter", 60, "video", "thumbnail")
-        unQflix.addChapter("ser_1", "sea_0", chapter)
+        val chapter = ChapterBuilder.any()
+        unQflix.addChapter(serie.id, season.id, chapter)
 
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 1)
         assertEquals(unQflix.series.first().seasons.first().chapters.first().title, chapter.title)
 
-        unQflix.deleteChapter("ser_1", "sea_0", "cha_0")
-
+        unQflix.deleteChapter(serie.id, season.id, chapter.id)
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 0)
     }
 
@@ -198,27 +193,26 @@ class UNQFlixSerieTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie = SerieBuilder.with(id = "ser_1")
         unQflix.addSerie(serie)
 
         assertEquals(unQflix.series.size, 1)
         assertEquals(unQflix.series.first().seasons.size, 0)
 
-        val season = Season("sea_0", "sea0", "sea0", "sea0", mutableListOf())
-        unQflix.addSeason("ser_1", season)
+        val season = SeasonBuilder.with(id = "sea_0")
+        unQflix.addSeason(serie.id, season)
 
         assertEquals(unQflix.series.first().seasons.size, 1)
         assertEquals(unQflix.series.first().seasons.first().title, season.title)
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 0)
 
-        val chapter = Chapter("cha_0", "chapter", "chapter", 60, "video", "thumbnail")
-        unQflix.addChapter("ser_1", "sea_0", chapter)
+        val chapter = ChapterBuilder.with(id = "cha_0")
+        unQflix.addChapter(serie.id, season.id, chapter)
 
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 1)
         assertEquals(unQflix.series.first().seasons.first().chapters.first().title, chapter.title)
 
         unQflix.deleteChapter("ser_1", "sea_0", "cha_1")
-
         assertEquals(unQflix.series.first().seasons.first().chapters.size, 1)
     }
 }

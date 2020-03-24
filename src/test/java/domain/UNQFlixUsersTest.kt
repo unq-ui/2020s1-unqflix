@@ -1,8 +1,8 @@
 package domain
 
 import org.junit.jupiter.api.Test
-import kotlin.test.assertFailsWith
 import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.assertThrows
 
 class UNQFlixUsersTest {
     @Test
@@ -23,6 +23,6 @@ class UNQFlixUsersTest {
 
         val user = UserBuilder.any()
         unQflix.addUser(user)
-        assertFailsWith<ExistException> { unQflix.addUser(user) }
+        assertThrows<ExistException> { unQflix.addUser(user) }
     }
 }

@@ -9,14 +9,14 @@ class UNQFlixBannerTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie2 = Serie("ser_2", "ser2", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie3 = Serie("ser_3", "ser3", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie4 = Serie("ser_4", "ser4", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie5 = Serie("ser_5", "ser5", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie6 = Serie("ser_6", "ser6", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie1 = SerieBuilder.with(id = "ser_1", title = "ser1")
+        val serie2 = SerieBuilder.with(id = "ser_2", title = "ser2")
+        val serie3 = SerieBuilder.with(id = "ser_3", title = "ser3")
+        val serie4 = SerieBuilder.with(id = "ser_4", title = "ser4")
+        val serie5 = SerieBuilder.with(id = "ser_5", title = "ser5")
+        val serie6 = SerieBuilder.with(id = "ser_6", title = "ser6")
 
-        unQflix.addBanner(serie)
+        unQflix.addBanner(serie1)
         unQflix.addBanner(serie2)
         unQflix.addBanner(serie3)
         unQflix.addBanner(serie4)
@@ -25,9 +25,8 @@ class UNQFlixBannerTest {
         assertEquals(unQflix.banners.size, 5)
 
         unQflix.addBanner(serie6)
-
         assertEquals(unQflix.banners.size, 5)
-        assertFalse(unQflix.banners.contains(serie))
+        assertFalse(unQflix.banners.contains(serie1))
     }
 
     @Test
@@ -35,10 +34,10 @@ class UNQFlixBannerTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.series.size, 0)
 
-        val serie = Serie("ser_1", "ser1", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
-        val serie2 = Serie("ser_2", "ser2", "ser1", "ser1", Available(), mutableListOf(), mutableListOf(), mutableListOf())
+        val serie1 = SerieBuilder.with(id = "ser_1", title = "ser1")
+        val serie2 = SerieBuilder.with(id = "ser_2", title = "ser2")
 
-        unQflix.addBanner(serie)
+        unQflix.addBanner(serie1)
         unQflix.addBanner(serie2)
 
         assertEquals(unQflix.banners.size, 2)
@@ -46,7 +45,7 @@ class UNQFlixBannerTest {
         unQflix.deleteBanner(serie2)
 
         assertEquals(unQflix.banners.size, 1)
-        assertTrue(unQflix.banners.contains(serie))
+        assertTrue(unQflix.banners.contains(serie1))
         assertFalse(unQflix.banners.contains(serie2))
     }
 }

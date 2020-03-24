@@ -1,7 +1,7 @@
 package domain
 
 import org.junit.jupiter.api.Test
-import kotlin.test.assertFailsWith
+import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.api.Assertions.*
 
 class UNQFlixMovieTest {
@@ -24,7 +24,7 @@ class UNQFlixMovieTest {
 
         val movie = Movie("mov_1", "mov1", "mov1", "mov1", Available(), "video", 210, mutableListOf(), mutableListOf(), mutableListOf(), mutableListOf())
         unQflix.addMovie(movie)
-        assertFailsWith<ExistException> { unQflix.addMovie(movie) }
+        assertThrows<ExistException> { unQflix.addMovie(movie) }
     }
 
     @Test
