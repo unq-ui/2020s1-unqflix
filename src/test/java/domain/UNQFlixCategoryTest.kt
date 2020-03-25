@@ -7,23 +7,23 @@ import org.junit.jupiter.api.assertThrows
 class UNQFlixCategoryTest {
     @Test
     fun addCategory() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.categories.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.categories.size, 0)
 
-        val category = Category("Terror")
-        unQflix.addCategory(category)
+        val category = Category("1", "Terror")
+        unqflix.addCategory(category)
 
-        assertEquals(unQflix.categories.size, 1)
-        assertEquals(unQflix.categories.first().name, category.name)
+        assertEquals(unqflix.categories.size, 1)
+        assertEquals(unqflix.categories.first().name, category.name)
     }
 
     @Test
     fun addCategoryTwoTimesSameCategory() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.categories.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.categories.size, 0)
 
-        val category = Category("Terror")
-        unQflix.addCategory(category)
-        assertThrows<ExistException> { unQflix.addCategory(category) }
+        val category = Category("1", "Terror")
+        unqflix.addCategory(category)
+        assertThrows<ExistsException> { unqflix.addCategory(category) }
     }
 }

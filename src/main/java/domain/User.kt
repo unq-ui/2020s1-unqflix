@@ -21,4 +21,7 @@ data class User(
             ?.let { favorites.remove(it) }
             ?: run { favorites.add(content) }
     }
+
+    override fun equalsId(other: Any?): Boolean = other is User && other.email == email
+    override fun existsException() = ExistsException("User", "email", email)
 }

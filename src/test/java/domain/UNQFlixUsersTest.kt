@@ -7,22 +7,22 @@ import org.junit.jupiter.api.assertThrows
 class UNQFlixUsersTest {
     @Test
     fun addUser() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.users.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.users.size, 0)
 
         val user = UserBuilder.any()
-        unQflix.addUser(user)
-        assertEquals(unQflix.users.size, 1)
-        assertEquals(unQflix.users.first().email, user.email)
+        unqflix.addUser(user)
+        assertEquals(unqflix.users.size, 1)
+        assertEquals(unqflix.users.first().email, user.email)
     }
 
     @Test
     fun addUserTwoTimesSameUser() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.users.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.users.size, 0)
 
         val user = UserBuilder.any()
-        unQflix.addUser(user)
-        assertThrows<ExistException> { unQflix.addUser(user) }
+        unqflix.addUser(user)
+        assertThrows<ExistsException> { unqflix.addUser(user) }
     }
 }

@@ -7,53 +7,53 @@ import org.junit.jupiter.api.Assertions.*
 class UNQFlixMovieTest {
     @Test
     fun addMovie() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.movies.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.movies.size, 0)
 
         val movie = MovieBuilder.any()
-        unQflix.addMovie(movie)
+        unqflix.addMovie(movie)
 
-        assertEquals(unQflix.movies.size, 1)
-        assertEquals(unQflix.movies.first().title, movie.title)
+        assertEquals(unqflix.movies.size, 1)
+        assertEquals(unqflix.movies.first().title, movie.title)
     }
 
     @Test
     fun addMovieTwoTimesSameMovie() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.movies.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.movies.size, 0)
 
         val movie = MovieBuilder.any()
-        unQflix.addMovie(movie)
-        assertThrows<ExistException> { unQflix.addMovie(movie.copy()) }
+        unqflix.addMovie(movie)
+        assertThrows<ExistsException> { unqflix.addMovie(movie.copy()) }
     }
 
     @Test
     fun deleteMovie() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.movies.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.movies.size, 0)
 
         val movie = MovieBuilder.with(id = "mov_1")
-        unQflix.addMovie(movie)
+        unqflix.addMovie(movie)
 
-        assertEquals(unQflix.movies.size, 1)
-        assertEquals(unQflix.movies.first().title, movie.title)
+        assertEquals(unqflix.movies.size, 1)
+        assertEquals(unqflix.movies.first().title, movie.title)
 
-        unQflix.deleteMovie("mov_1")
-        assertEquals(unQflix.movies.size, 0)
+        unqflix.deleteMovie("mov_1")
+        assertEquals(unqflix.movies.size, 0)
     }
 
     @Test
     fun deleteMovieNotFoundId() {
-        val unQflix = UNQFlix()
-        assertEquals(unQflix.movies.size, 0)
+        val unqflix = UNQFlix()
+        assertEquals(unqflix.movies.size, 0)
 
         val movie = MovieBuilder.with(id = "mov_1")
-        unQflix.addMovie(movie)
+        unqflix.addMovie(movie)
 
-        assertEquals(unQflix.movies.size, 1)
-        assertEquals(unQflix.movies.first().title, movie.title)
+        assertEquals(unqflix.movies.size, 1)
+        assertEquals(unqflix.movies.first().title, movie.title)
 
-        unQflix.deleteMovie("mov_2")
-        assertEquals(unQflix.movies.size, 1)
+        unqflix.deleteMovie("mov_2")
+        assertEquals(unqflix.movies.size, 1)
     }
 }
