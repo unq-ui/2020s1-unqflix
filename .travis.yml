@@ -5,3 +5,5 @@ before_install: rm ~/.m2/settings.xml
 before_script: mvn ktlint:check
 
 script: mvn clean test
+
+after_success: mvn clean test jacoco:report coveralls:report

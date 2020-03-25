@@ -1,7 +1,9 @@
+# UNQ » UIs » Dominio » UNQFlix
+
 [![Build Status](https://travis-ci.org/unq-ui/unqflix.svg?branch=master)](https://travis-ci.org/unq-ui/unqflix)
 [![JitPack](https://jitpack.io/v/unq-ui/unqflix.svg)](https://jitpack.io/#unq-ui/unqflix)
-
-# UNQ » UIs » Dominio » UNQFlix
+[![Coverage Status](https://coveralls.io/repos/github/unq-ui/unqflix/badge.svg)](https://coveralls.io/github/unq-ui/unqflix)
+[![Maintainability](https://api.codeclimate.com/v1/badges/78895f141af36a348d36/maintainability)](https://codeclimate.com/github/unq-ui/unqflix/maintainability)
 
 Construcción de Interfaces de Usuario, Universidad Nacional de Quilmes.
 
