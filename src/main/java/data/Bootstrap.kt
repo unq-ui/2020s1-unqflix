@@ -6,6 +6,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 val random = Random(100)
+val idGenerator = IdGenerator()
 
 private fun readFile(name: String): String {
     return object {}::class.java.classLoader.getResource(name).readText()
@@ -41,7 +42,7 @@ private fun addAllMovies(unqflix: UNQFlix) {
     movies.forEach {
         unqflix.addMovie(
             Movie(
-                unqflix.nextMovieId(),
+                idGenerator.nextMovieId(),
                 it.title,
                 it.description,
                 it.poster,
@@ -68,7 +69,7 @@ private fun addAllSeries(unqflix: UNQFlix) {
     series.forEach {
         unqflix.addSerie(
             Serie(
-                unqflix.nextSerieId(),
+                idGenerator.nextSerieId(),
                 it.title,
                 it.description,
                 it.poster,
@@ -84,7 +85,7 @@ private fun addAllSeries(unqflix: UNQFlix) {
 private fun getSeasons(unqflix: UNQFlix, seasons: List<SeasonData>): MutableList<Season> {
     return seasons.map {
         Season(
-            unqflix.nextSeasonId(),
+            idGenerator.nextSeasonId(),
             it.title,
             it.description,
             it.poster,
@@ -95,7 +96,14 @@ private fun getSeasons(unqflix: UNQFlix, seasons: List<SeasonData>): MutableList
 
 private fun getChapters(unqflix: UNQFlix, chapters: List<EpisodeData>): MutableList<Chapter> {
     return chapters.map {
-        Chapter(unqflix.nextChapterId(), it.title, it.description, it.duration, it.video, it.thumbnail)
+        Chapter(
+            idGenerator.nextChapterId(),
+            it.title,
+            it.description,
+            it.duration,
+            it.video,
+            it.thumbnail
+        )
     }.toMutableList()
 }
 

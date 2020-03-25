@@ -8,13 +8,11 @@ data class Season(
     var chapters: MutableList<Chapter> = mutableListOf()
 ) : Id {
 
-    fun addChapter(chapter: Chapter) {
-        chapters.firstOrNull { it.title === chapter.title }
+    fun addChapter(chapter: Chapter): Boolean {
+        return chapters.firstOrNull { it.title === chapter.title }
             ?.let { throw ExistException("Chapter", "title", chapter.title) }
             ?: run { chapters.add(chapter) }
     }
 
-    fun deleteChapter(idChapter: String) {
-        chapters.removeIf { it.id == idChapter }
-    }
+    fun deleteChapter(idChapter: String) = chapters.removeIf { it.id == idChapter }
 }

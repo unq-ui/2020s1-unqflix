@@ -11,24 +11,22 @@ data class Serie(
     override var relatedContent: MutableList<Content> = mutableListOf()
 ) : Content, Id {
 
-    fun addSeason(season: Season) {
-        seasons.firstOrNull { it.title === season.title }
+    fun addSeason(season: Season): Boolean {
+        return seasons.firstOrNull { it.title === season.title }
             ?.let { throw ExistException("Season", "title", season.title) }
             ?: run { seasons.add(season) }
     }
 
-    fun addChapter(idSeason: String, chapter: Chapter) {
-        seasons.find { it.id == idSeason }
+    fun addChapter(idSeason: String, chapter: Chapter): Boolean {
+        return seasons.find { it.id == idSeason }
             ?.addChapter(chapter)
             ?: run { throw NotFoundException("Season", "id", idSeason) }
     }
 
-    fun deleteSeason(idSeason: String) {
-        seasons.removeIf { it.id == idSeason }
-    }
+    fun deleteSeason(idSeason: String) = seasons.removeIf { it.id == idSeason }
 
-    fun deleteChapter(idSeason: String, idChapter: String) {
-        seasons.find { it.id == idSeason }
+    fun deleteChapter(idSeason: String, idChapter: String): Boolean {
+        return seasons.find { it.id == idSeason }
             ?.deleteChapter(idChapter)
             ?: run { throw NotFoundException("Season", "id", idSeason) }
     }
