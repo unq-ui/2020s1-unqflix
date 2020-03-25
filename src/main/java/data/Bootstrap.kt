@@ -47,7 +47,7 @@ private fun getMovies(): MutableList<MovieData> {
 private fun addAllMovies(unqFlix: UNQFlix) {
     val movies = getMovies()
     movies.forEach {
-        unqFlix.addMovie(Movie(unqFlix.getNewMovieId(), it.title, it.desciption, it.poster, getRandomState(), it.video, it.duration, it.actores.toMutableList(), it.directors.toMutableList(), lookUpCategories(unqFlix, it.caregories), mutableListOf()))
+        unqFlix.addMovie(Movie(unqFlix.nextMovieId(), it.title, it.desciption, it.poster, getRandomState(), it.video, it.duration, it.actores.toMutableList(), it.directors.toMutableList(), lookUpCategories(unqFlix, it.caregories), mutableListOf()))
     }
 }
 
@@ -62,7 +62,7 @@ private fun addAllSeries(unqFlix: UNQFlix) {
     series.forEach {
         unqFlix.addSerie(
             Serie(
-                unqFlix.getNewSerieId(),
+                unqFlix.nextSerieId(),
                 it.title,
                 it.desciption,
                 it.poster,
@@ -78,7 +78,7 @@ private fun addAllSeries(unqFlix: UNQFlix) {
 private fun getSeasons(unqFlix: UNQFlix, seasons: List<SeasonData>): MutableList<Season> {
     return seasons.map {
         Season(
-            unqFlix.getNewSeasonId(),
+            unqFlix.nextSeasonId(),
             it.title,
             it.description,
             it.poster,
@@ -89,7 +89,7 @@ private fun getSeasons(unqFlix: UNQFlix, seasons: List<SeasonData>): MutableList
 
 private fun getChapters(unqFlix: UNQFlix, chapters: List<EpisodeData>): MutableList<Chapter> {
     return chapters.map {
-        Chapter(unqFlix.getNewChapterId(), it.title, it.desciption, it.duration, it.video, it.thumbnail)
+        Chapter(unqFlix.nextChapterId(), it.title, it.desciption, it.duration, it.video, it.thumbnail)
     }.toMutableList()
 }
 
