@@ -8,8 +8,8 @@ data class Movie(
     override var state: ContentState,
     var video: String,
     var duration: Int,
-    var actors: MutableList<String>,
-    var directors: MutableList<String>,
-    var categories: MutableList<Category>,
-    override var relatedContent: MutableList<Content>
+    var actors: MutableList<String> = mutableListOf(),
+    var directors: MutableList<String> = mutableListOf(),
+    var categories: MutableList<Category> = mutableListOf(),
+    override var relatedContent: MutableList<Content> = mutableListOf()
 ) : Content, Id
