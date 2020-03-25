@@ -24,7 +24,7 @@ class UNQFlixSerieTest {
 
         val serie = SerieBuilder.any()
         unQflix.addSerie(serie)
-        assertThrows<ExistException> { unQflix.addSerie(serie.copy()) }
+        assertThrows<ExistsException> { unQflix.addSerie(serie.copy()) }
     }
 
     @Test

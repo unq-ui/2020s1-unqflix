@@ -13,7 +13,7 @@ data class Serie(
 
     fun addSeason(season: Season): Boolean {
         return seasons.firstOrNull { it.title === season.title }
-            ?.let { throw ExistException("Season", "title", season.title) }
+            ?.let { throw ExistsException("Season", "title", season.title) }
             ?: run { seasons.add(season) }
     }
 

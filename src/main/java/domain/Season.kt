@@ -10,7 +10,7 @@ data class Season(
 
     fun addChapter(chapter: Chapter): Boolean {
         return chapters.firstOrNull { it.title === chapter.title }
-            ?.let { throw ExistException("Chapter", "title", chapter.title) }
+            ?.let { throw ExistsException("Chapter", "title", chapter.title) }
             ?: run { chapters.add(chapter) }
     }
 

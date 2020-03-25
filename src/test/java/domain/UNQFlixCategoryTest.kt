@@ -24,6 +24,6 @@ class UNQFlixCategoryTest {
 
         val category = Category("Terror")
         unQflix.addCategory(category)
-        assertThrows<ExistException> { unQflix.addCategory(category) }
+        assertThrows<ExistsException> { unQflix.addCategory(category) }
     }
 }

@@ -24,7 +24,7 @@ class UNQFlixMovieTest {
 
         val movie = MovieBuilder.any()
         unQflix.addMovie(movie)
-        assertThrows<ExistException> { unQflix.addMovie(movie.copy()) }
+        assertThrows<ExistsException> { unQflix.addMovie(movie.copy()) }
     }
 
     @Test

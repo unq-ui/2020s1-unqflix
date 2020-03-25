@@ -9,25 +9,25 @@ class UNQFlix(
 ) {
     fun addUser(user: User): Boolean {
         return users.firstOrNull { it.email === user.email }
-            ?.let { throw ExistException("User", "email", user.email) }
+            ?.let { throw ExistsException("User", "email", user.email) }
             ?: run { users.add(user) }
     }
 
     fun addCategory(category: Category): Boolean {
         return categories.firstOrNull { it.name === category.name }
-            ?.let { throw ExistException("Category", "name", category.name) }
+            ?.let { throw ExistsException("Category", "name", category.name) }
             ?: run { categories.add(category) }
     }
 
     fun addMovie(movie: Movie): Boolean {
         return movies.firstOrNull { it.title === movie.title }
-            ?.let { throw ExistException("Movie", "title", movie.title) }
+            ?.let { throw ExistsException("Movie", "title", movie.title) }
             ?: run { movies.add(movie) }
     }
 
     fun addSerie(serie: Serie): Boolean {
         return series.firstOrNull { it.title === serie.title }
-            ?.let { throw ExistException("Serie", "title", serie.title) }
+            ?.let { throw ExistsException("Serie", "title", serie.title) }
             ?: run { series.add(serie) }
     }
 

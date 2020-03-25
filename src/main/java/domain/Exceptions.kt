@@ -1,6 +1,6 @@
 package domain
 
-class ExistException(
+class ExistsException(
     classError: String,
     val prop: String,
     val value: String

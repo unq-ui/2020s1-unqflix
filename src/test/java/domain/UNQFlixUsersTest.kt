@@ -23,6 +23,6 @@ class UNQFlixUsersTest {
 
         val user = UserBuilder.any()
         unQflix.addUser(user)
-        assertThrows<ExistException> { unQflix.addUser(user) }
+        assertThrows<ExistsException> { unQflix.addUser(user) }
     }
 }
