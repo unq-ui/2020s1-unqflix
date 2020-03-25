@@ -17,4 +17,12 @@ object IdGenerator {
     fun nextSerieId(): String = "ser_${++currentSerieId}"
     fun nextSeasonId(): String = "sea_${++currentSeasonId}"
     fun nextChapterId(): String = "cha_${++currentChapterId}"
+
+    fun resetAll() {
+        currentUserId = 0
+        currentMovieId = 0
+        currentSerieId = 0
+        currentSeasonId = 0
+        currentChapterId = 0
+    }
 }

@@ -11,8 +11,8 @@ object UserBuilder : Builder {
         name: String = "user",
         creditCard: String = "1234123412341234",
         image: String = "image",
-        email:String = "user@gmail.com",
-        password:String = "user",
+        email: String = "user@gmail.com",
+        password: String = "user",
         favorites: MutableCollection<Content> = mutableListOf(),
         lastSeen: MutableCollection<Content> = mutableListOf()
     ) = User(id, name, creditCard, image, email, password, favorites, lastSeen)
@@ -71,4 +71,3 @@ object MovieBuilder : Builder {
         relatedContent: MutableList<Content> = mutableListOf()
     ) = Movie(id, title, description, poster, state, video, duration, actors, directors, categories, relatedContent)
 }
-

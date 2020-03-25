@@ -15,6 +15,6 @@ data class Season(
     }
 
     fun deleteChapter(idChapter: String) {
-        chapters.removeIf { it.id == idChapter}
+        chapters.removeIf { it.id == idChapter }
     }
 }

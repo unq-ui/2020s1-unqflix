@@ -1,7 +1,7 @@
 [
   {
     "title": "Dilwale Dulhania Le Jayenge",
-    "desciption": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
+    "description": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
     "poster": "https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg",
     "video": "https://www.youtube.com/watch?v=cmax1C1p660",
     "duration": 100,
@@ -15,7 +15,7 @@
       "Cinderella Albertson",
       "Ailene Whitten"
     ],
-    "caregories": [
+    "categories": [
       "Comedy",
       "Drama",
       "Romance"
@@ -23,7 +23,7 @@
   },
   {
     "title": "The Shawshank Redemption",
-    "desciption": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    "description": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
     "poster": "https://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg",
     "video": "https://www.youtube.com/watch?v=K_tLp7T6U1c",
     "duration": 100,
@@ -37,14 +37,14 @@
       "Phylicia Castile",
       "Lavera Blaise"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Crime"
     ]
   },
   {
     "title": "The Godfather",
-    "desciption": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "description": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
     "poster": "https://image.tmdb.org/t/p/w500/d4KNaTrltq6bpkFS01pYtyXa09m.jpg",
     "video": "https://www.youtube.com/watch?v=fBNpSRtfIUA",
     "duration": 100,
@@ -58,14 +58,14 @@
       "Chantay Roache",
       "Russ Deckard"
     ],
-    "caregories": [
+    "categories": [
       "Crime",
       "Drama"
     ]
   },
   {
     "title": "Schindler's List",
-    "desciption": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+    "description": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
     "poster": "https://image.tmdb.org/t/p/w500/yPisjyLweCl1tbgwgtzBCNCBle.jpg",
     "video": "https://www.youtube.com/watch?v=bJcLRFWxRno",
     "duration": 130,
@@ -79,7 +79,7 @@
       "Armando Sidener",
       "Darwin Fain"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "History",
       "War"
@@ -87,7 +87,7 @@
   },
   {
     "title": "The Godfather: Part II",
-    "desciption": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+    "description": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
     "poster": "https://image.tmdb.org/t/p/w500/bVq65huQ8vHDd1a4Z37QtuyEvpA.jpg",
     "video": "https://www.youtube.com/watch?v=9O1Iy9od7-A",
     "duration": 120,
@@ -101,14 +101,14 @@
       "Armando Sidener",
       "Debbra Delker"
     ],
-    "caregories": [
+    "categories": [
       "Crime",
       "Drama"
     ]
   },
   {
     "title": "Parasite",
-    "desciption": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+    "description": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
     "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
     "video": "https://www.youtube.com/watch?v=isOGD_7hNIY",
     "duration": 400,
@@ -122,7 +122,7 @@
       "Lyda Kennamer",
       "Elias Lemarr"
     ],
-    "caregories": [
+    "categories": [
       "Comedy",
       "Drama",
       "Thriller"
@@ -130,7 +130,7 @@
   },
   {
     "title": "Your Name.",
-    "desciption": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+    "description": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
     "poster": "https://image.tmdb.org/t/p/w500/xq1Ugd62d23K2knRUx6xxuALTZB.jpg",
     "video": "https://www.youtube.com/watch?v=xU47nhruN-Q",
     "duration": 210,
@@ -144,7 +144,7 @@
       "Barrett Philhower",
       "Darwin Fain"
     ],
-    "caregories": [
+    "categories": [
       "Animation",
       "Drama",
       "Romance"
@@ -152,7 +152,7 @@
   },
   {
     "title": "Spirited Away",
-    "desciption": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+    "description": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
     "poster": "https://image.tmdb.org/t/p/w500/oRvMaJOmapypFUcQqpgHMZA6qL9.jpg",
     "video": "https://www.youtube.com/watch?v=ByXuk9QqQkk",
     "duration": 210,
@@ -166,7 +166,7 @@
       "Roslyn Yepez",
       "Lyda Kennamer"
     ],
-    "caregories": [
+    "categories": [
       "Animation",
       "Fantasy",
       "Family"
@@ -174,7 +174,7 @@
   },
   {
     "title": "The Green Mile",
-    "desciption": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+    "description": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
     "poster": "https://image.tmdb.org/t/p/w500/sOHqdY1RnSn6kcfAHKu28jvTebE.jpg",
     "video": "https://www.youtube.com/watch?v=ctRK-4Vt7dA",
     "duration": 140,
@@ -188,7 +188,7 @@
       "Robin Manuelito",
       "Debbra Delker"
     ],
-    "caregories": [
+    "categories": [
       "Crime",
       "Drama",
       "Fantasy"
@@ -196,7 +196,7 @@
   },
   {
     "title": "Pulp Fiction",
-    "desciption": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+    "description": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
     "poster": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
     "video": "https://www.youtube.com/watch?v=tGpTpVyI_OQ",
     "duration": 120,
@@ -210,14 +210,14 @@
       "Shantell Brain",
       "Cinderella Albertson"
     ],
-    "caregories": [
+    "categories": [
       "Thriller",
       "Crime"
     ]
   },
   {
     "title": "Life Is Beautiful",
-    "desciption": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
+    "description": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
     "poster": "https://image.tmdb.org/t/p/w500/f7DImXDebOs148U4uPjI61iDvaK.jpg",
     "video": "https://www.youtube.com/watch?v=pAYEQP8gx3w",
     "duration": 80,
@@ -231,14 +231,14 @@
       "Shantell Brain",
       "Tish Lytle"
     ],
-    "caregories": [
+    "categories": [
       "Comedy",
       "Drama"
     ]
   },
   {
     "title": "Once Upon a Time in America",
-    "desciption": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
+    "description": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
     "poster": "https://image.tmdb.org/t/p/w500/x733R4ISI0RbKeHhVkXdTMFmTFr.jpg",
     "video": "https://www.youtube.com/watch?v=_gdEuuxW-zk",
     "duration": 400,
@@ -252,14 +252,14 @@
       "Darwin Fain",
       "Debbra Delker"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Crime"
     ]
   },
   {
     "title": "Forrest Gump",
-    "desciption": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+    "description": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
     "poster": "https://image.tmdb.org/t/p/w500/yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg",
     "video": "https://www.youtube.com/watch?v=VVN82P8dN7I",
     "duration": 130,
@@ -273,7 +273,7 @@
       "Phylicia Castile",
       "Lavera Blaise"
     ],
-    "caregories": [
+    "categories": [
       "Comedy",
       "Drama",
       "Romance"
@@ -281,7 +281,7 @@
   },
   {
     "title": "The Dark Knight",
-    "desciption": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "description": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
     "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     "video": "https://www.youtube.com/watch?v=kmJLuwP3MbY",
     "duration": 130,
@@ -295,7 +295,7 @@
       "Darwin Fain",
       "Christeen Hampton"
     ],
-    "caregories": [
+    "categories": [
       "Action",
       "Crime",
       "Drama",
@@ -304,7 +304,7 @@
   },
   {
     "title": "The Lord of the Rings: The Return of the King",
-    "desciption": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
+    "description": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
     "poster": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     "video": "https://www.youtube.com/watch?v=co9SNfJNDN8",
     "duration": 30,
@@ -318,7 +318,7 @@
       "Chantay Roache",
       "Darwin Fain"
     ],
-    "caregories": [
+    "categories": [
       "Action",
       "Adventure",
       "Fantasy"
@@ -326,7 +326,7 @@
   },
   {
     "title": "GoodFellas",
-    "desciption": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+    "description": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
     "poster": "https://image.tmdb.org/t/p/w500/pwpGfTImTGifEGgLb3s6LRPd4I6.jpg",
     "video": "https://www.youtube.com/watch?v=rW2bWAcsPCk",
     "duration": 130,
@@ -340,14 +340,14 @@
       "Jenell Hopson",
       "Krystina Badillo"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Crime"
     ]
   },
   {
     "title": "12 Angry Men",
-    "desciption": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
+    "description": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
     "poster": "https://image.tmdb.org/t/p/w500/3W0v956XxSG5xgm7LB6qu8ExYJ2.jpg",
     "video": "https://www.youtube.com/watch?v=OvebOqneLIU",
     "duration": 400,
@@ -361,13 +361,13 @@
       "Tamara Dandridge",
       "Tish Lytle"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "Seven Samurai",
-    "desciption": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food. A giant battle occurs when 40 bandits attack the village.",
+    "description": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food. A giant battle occurs when 40 bandits attack the village.",
     "poster": "https://image.tmdb.org/t/p/w500/v6xrz4fr92KY1oNC3HsEvrsvR1n.jpg",
     "video": "https://www.youtube.com/watch?v=h1JziA0nNkQ",
     "duration": 30,
@@ -381,14 +381,14 @@
       "Barrett Philhower",
       "Ailene Whitten"
     ],
-    "caregories": [
+    "categories": [
       "Action",
       "Drama"
     ]
   },
   {
     "title": "A Dog's Will",
-    "desciption": "The lively João Grilo and the sly Chicó are poor guys living in the hinterland who cheat a bunch of people in a small Northeast Brazil town. But when they die, they have to be judged by Christ, the Devil and the Virgin Mary, before they are admitted to paradise.",
+    "description": "The lively João Grilo and the sly Chicó are poor guys living in the hinterland who cheat a bunch of people in a small Northeast Brazil town. But when they die, they have to be judged by Christ, the Devil and the Virgin Mary, before they are admitted to paradise.",
     "poster": "https://image.tmdb.org/t/p/w500/imcOp1kJsCsAFCoOtY5OnPrFbAf.jpg",
     "video": "https://www.youtube.com/watch?v=Kxms-OtUXS0",
     "duration": 400,
@@ -402,14 +402,14 @@
       "Tammera Jensen",
       "Elaina Mary"
     ],
-    "caregories": [
+    "categories": [
       "Adventure",
       "Comedy"
     ]
   },
   {
     "title": "Psycho",
-    "desciption": "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother. The place seems quirky, but fine… until Marion decides to take a shower.",
+    "description": "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother. The place seems quirky, but fine… until Marion decides to take a shower.",
     "poster": "https://image.tmdb.org/t/p/w500/81d8oyEFgj7FlxJqSDXWr8JH8kV.jpg",
     "video": "https://www.youtube.com/watch?v=tRFnwT6tnbU",
     "duration": 130,
@@ -423,7 +423,7 @@
       "Tammera Jensen",
       "Garth Mcentire"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Horror",
       "Thriller"
@@ -431,7 +431,7 @@
   },
   {
     "title": "The Good, the Bad and the Ugly",
-    "desciption": "While the Civil War rages between the Union and the Confederacy, three men – a quiet loner, a ruthless hit man and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
+    "description": "While the Civil War rages between the Union and the Confederacy, three men – a quiet loner, a ruthless hit man and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
     "poster": "https://image.tmdb.org/t/p/w500/wfPHdfofBD5PN96dV96a51B3Ja2.jpg",
     "video": "https://www.youtube.com/watch?v=OLNktcDs05Y",
     "duration": 130,
@@ -445,13 +445,13 @@
       "Danika Burman",
       "Jada Heng"
     ],
-    "caregories": [
+    "categories": [
       "Western"
     ]
   },
   {
     "title": "Fight Club",
-    "desciption": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "description": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
     "poster": "https://image.tmdb.org/t/p/w500/4GpwvwDjgwiShr1UBJIn5fk1gwT.jpg",
     "video": "https://www.youtube.com/watch?v=BdJKm16Co6M",
     "duration": 210,
@@ -465,13 +465,13 @@
       "Barrett Philhower",
       "Mariana Bourgault"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "One Flew Over the Cuckoo's Nest",
-    "desciption": "While serving time for insanity at a state mental hospital, implacable rabble-rouser, Randle Patrick McMurphy, inspires his fellow patients to rebel against the authoritarian rule of head nurse, Mildred Ratched.",
+    "description": "While serving time for insanity at a state mental hospital, implacable rabble-rouser, Randle Patrick McMurphy, inspires his fellow patients to rebel against the authoritarian rule of head nurse, Mildred Ratched.",
     "poster": "https://image.tmdb.org/t/p/w500/2Sns5oMb356JNdBHgBETjIpRYy9.jpg",
     "video": "https://www.youtube.com/watch?v=6aJT5fGCRPk",
     "duration": 100,
@@ -485,13 +485,13 @@
       "Herma Mapes",
       "Roslyn Yepez"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "Cinema Paradiso",
-    "desciption": "A filmmaker recalls his childhood, when he fell in love with the movies at his village's theater and formed a deep friendship with the theater's projectionist.",
+    "description": "A filmmaker recalls his childhood, when he fell in love with the movies at his village's theater and formed a deep friendship with the theater's projectionist.",
     "poster": "https://image.tmdb.org/t/p/w500/hYzCLju3W74nLhhRXfPkwDi1Tun.jpg",
     "video": "https://www.youtube.com/watch?v=C2-GX0Tltgw",
     "duration": 180,
@@ -505,14 +505,14 @@
       "Danika Burman",
       "Ailene Whitten"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Romance"
     ]
   },
   {
     "title": "City of God",
-    "desciption": "Cidade de Deus is a shantytown that started during the 1960s and became one of Rio de Janeiro’s most dangerous places in the beginning of the 1980s. To tell the story of this place, the movie describes the life of various characters, all seen by the point of view of the narrator, Buscapé. Buscapé was raised in a very violent environment. Despite the feeling that all odds were against him, he finds out that life can be seen with other eyes...",
+    "description": "Cidade de Deus is a shantytown that started during the 1960s and became one of Rio de Janeiro’s most dangerous places in the beginning of the 1980s. To tell the story of this place, the movie describes the life of various characters, all seen by the point of view of the narrator, Buscapé. Buscapé was raised in a very violent environment. Despite the feeling that all odds were against him, he finds out that life can be seen with other eyes...",
     "poster": "https://image.tmdb.org/t/p/w500/4YEX7qUfg6kN2tHm84CMt2CEq9n.jpg",
     "video": "https://www.youtube.com/watch?v=ioUE_5wpg_E",
     "duration": 210,
@@ -526,14 +526,14 @@
       "Ailene Whitten",
       "Tish Lytle"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Crime"
     ]
   },
   {
     "title": "Spider-Man: Into the Spider-Verse",
-    "desciption": "Miles Morales is juggling his life between being a high school student and being a spider-man. When Wilson \"Kingpin\" Fisk uses a super collider, others from across the Spider-Verse are transported to this dimension.",
+    "description": "Miles Morales is juggling his life between being a high school student and being a spider-man. When Wilson \"Kingpin\" Fisk uses a super collider, others from across the Spider-Verse are transported to this dimension.",
     "poster": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
     "video": "https://www.youtube.com/watch?v=g4Hbz2jLxvQ",
     "duration": 120,
@@ -547,7 +547,7 @@
       "Chantay Roache",
       "Phylicia Castile"
     ],
-    "caregories": [
+    "categories": [
       "Action",
       "Adventure",
       "Animation",
@@ -557,7 +557,7 @@
   },
   {
     "title": "Sunset Boulevard",
-    "desciption": "A hack screenwriter writes a screenplay for a former silent film star who has faded into Hollywood obscurity.",
+    "description": "A hack screenwriter writes a screenplay for a former silent film star who has faded into Hollywood obscurity.",
     "poster": "https://image.tmdb.org/t/p/w500/oFwzvRgfxJc0FUr2mwYTi10dk3G.jpg",
     "video": "https://www.youtube.com/watch?v=klM1GSJsblQ",
     "duration": 210,
@@ -571,13 +571,13 @@
       "Elias Lemarr",
       "Garth Mcentire"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "City Lights",
-    "desciption": "City Lights is the first silent film that Charlie Chaplin directed after he established himself with sound accompanied films. The film is about a penniless man who falls in love with a flower girl.",
+    "description": "City Lights is the first silent film that Charlie Chaplin directed after he established himself with sound accompanied films. The film is about a penniless man who falls in love with a flower girl.",
     "poster": "https://image.tmdb.org/t/p/w500/bXNvzjULc9jrOVhGfjcc64uKZmZ.jpg",
     "video": "https://www.youtube.com/watch?v=9cZxD-ihzmk",
     "duration": 80,
@@ -591,7 +591,7 @@
       "Dan Duropan",
       "Tish Lytle"
     ],
-    "caregories": [
+    "categories": [
       "Comedy",
       "Drama",
       "Romance"
@@ -599,7 +599,7 @@
   },
   {
     "title": "Whiplash",
-    "desciption": "Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
+    "description": "Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
     "poster": "https://image.tmdb.org/t/p/w500/lIv1QinFqz4dlp5U4lQ6HaiskOZ.jpg",
     "video": "https://www.youtube.com/watch?v=fHAfUSBc0pg",
     "duration": 100,
@@ -613,14 +613,14 @@
       "Cinderella Albertson",
       "Cinderella Albertson"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Music"
     ]
   },
   {
     "title": "Grave of the Fireflies",
-    "desciption": "In the final months of World War II, 14-year-old Seita and his sister Setsuko are orphaned when their mother is killed during an air raid in Kobe, Japan. After a falling out with their aunt, they move into an abandoned bomb shelter. With no surviving relatives and their emergency rations depleted, Seita and Setsuko struggle to survive.",
+    "description": "In the final months of World War II, 14-year-old Seita and his sister Setsuko are orphaned when their mother is killed during an air raid in Kobe, Japan. After a falling out with their aunt, they move into an abandoned bomb shelter. With no surviving relatives and their emergency rations depleted, Seita and Setsuko struggle to survive.",
     "poster": "https://image.tmdb.org/t/p/w500/wcNkHDbyc290hcWk7KXbBZUuXpq.jpg",
     "video": "https://www.youtube.com/watch?v=4vPeTSRd580",
     "duration": 80,
@@ -634,7 +634,7 @@
       "Shantell Brain",
       "Ailene Whitten"
     ],
-    "caregories": [
+    "categories": [
       "Animation",
       "Drama",
       "War"
@@ -642,7 +642,7 @@
   },
   {
     "title": "American History X",
-    "desciption": "Derek Vineyard is paroled after serving 3 years in prison for killing two thugs who tried to break into/steal his truck. Through his brother, Danny Vineyard's narration, we learn that before going to prison, Derek was a skinhead and the leader of a violent white supremacist gang that committed acts of racial crime throughout L.A. and his actions greatly influenced Danny. Reformed and fresh out of prison, Derek severs contact with the gang and becomes determined to keep Danny from going down the same violent path as he did.",
+    "description": "Derek Vineyard is paroled after serving 3 years in prison for killing two thugs who tried to break into/steal his truck. Through his brother, Danny Vineyard's narration, we learn that before going to prison, Derek was a skinhead and the leader of a violent white supremacist gang that committed acts of racial crime throughout L.A. and his actions greatly influenced Danny. Reformed and fresh out of prison, Derek severs contact with the gang and becomes determined to keep Danny from going down the same violent path as he did.",
     "poster": "https://image.tmdb.org/t/p/w500/fXepRAYOx1qC3wju7XdDGx60775.jpg",
     "video": "https://www.youtube.com/watch?v=JsPW6Fj3BUI",
     "duration": 130,
@@ -656,13 +656,13 @@
       "Tamara Dandridge",
       "Krystina Badillo"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "The Great Dictator",
-    "desciption": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
+    "description": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
     "poster": "https://image.tmdb.org/t/p/w500/hK2KsU0lNiYRqIrYJcC3x63dPnH.jpg",
     "video": "https://www.youtube.com/watch?v=G4M3FSk4r_M",
     "duration": 400,
@@ -676,13 +676,13 @@
       "Tish Lytle",
       "Elaina Mary"
     ],
-    "caregories": [
+    "categories": [
       "Comedy"
     ]
   },
   {
     "title": "Sherlock: The Final Problem",
-    "desciption": "Long buried secrets finally come to light as someone has been playing a very long game indeed. Sherlock and John face their greatest ever challenge. Is the game finally over?",
+    "description": "Long buried secrets finally come to light as someone has been playing a very long game indeed. Sherlock and John face their greatest ever challenge. Is the game finally over?",
     "poster": "https://image.tmdb.org/t/p/w500/ySiqbi1sW7imVYbtECZS0xQ3Hmj.jpg",
     "video": "https://www.youtube.com/watch?v=VVcjBlKka74",
     "duration": 30,
@@ -696,14 +696,14 @@
       "Danika Burman",
       "Jada Heng"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Mystery"
     ]
   },
   {
     "title": "Howl's Moving Castle",
-    "desciption": "When Sophie, a shy young woman, is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
+    "description": "When Sophie, a shy young woman, is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
     "poster": "https://image.tmdb.org/t/p/w500/sVnMD28upIAlOnZNXT7OOSF5XlR.jpg",
     "video": "https://www.youtube.com/watch?v=iwROgK94zcM",
     "duration": 180,
@@ -717,7 +717,7 @@
       "Ailene Whitten",
       "Robin Manuelito"
     ],
-    "caregories": [
+    "categories": [
       "Adventure",
       "Animation",
       "Fantasy"
@@ -725,7 +725,7 @@
   },
   {
     "title": "The Empire Strikes Back",
-    "desciption": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
+    "description": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
     "poster": "https://image.tmdb.org/t/p/w500/9SKDSFbaM6LuGqG1aPWN3wYGEyD.jpg",
     "video": "https://www.youtube.com/watch?v=KwYa7UpoWtM",
     "duration": 100,
@@ -739,7 +739,7 @@
       "Darwin Fain",
       "Elaina Mary"
     ],
-    "caregories": [
+    "categories": [
       "Action",
       "Adventure",
       "Science Fiction"
@@ -747,7 +747,7 @@
   },
   {
     "title": "Neon Genesis Evangelion: The End of Evangelion",
-    "desciption": "The second of two theatrically released follow-ups to the Neon Genesis Evangelion series. Comprising of two alternate episodes which were first intended to take the place of episodes 25 and 26, this finale answers many of the questions surrounding the series, while also opening up some new possibilities.",
+    "description": "The second of two theatrically released follow-ups to the Neon Genesis Evangelion series. Comprising of two alternate episodes which were first intended to take the place of episodes 25 and 26, this finale answers many of the questions surrounding the series, while also opening up some new possibilities.",
     "poster": "https://image.tmdb.org/t/p/w500/5JYzfyKBwReaQ41WFhqXgOZnPWV.jpg",
     "video": "https://www.youtube.com/watch?v=-d2th2c8NhU",
     "duration": 80,
@@ -761,7 +761,7 @@
       "Ailene Whitten",
       "Danika Burman"
     ],
-    "caregories": [
+    "categories": [
       "Animation",
       "Drama",
       "Science Fiction"
@@ -769,7 +769,7 @@
   },
   {
     "title": "Tokyo Story",
-    "desciption": "The elderly Shukishi and his wife, Tomi, take the long journey from their small seaside village to visit their adult children in Tokyo. Their elder son, Koichi, a doctor, and their daughter, Shige, a hairdresser, don't have much time to spend with their aged parents, and so it falls to Noriko, the widow of their younger son who was killed in the war, to keep her in-laws company.",
+    "description": "The elderly Shukishi and his wife, Tomi, take the long journey from their small seaside village to visit their adult children in Tokyo. Their elder son, Koichi, a doctor, and their daughter, Shige, a hairdresser, don't have much time to spend with their aged parents, and so it falls to Noriko, the widow of their younger son who was killed in the war, to keep her in-laws company.",
     "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
     "video": "https://www.youtube.com/watch?v=7pss-7_5Xh0",
     "duration": 210,
@@ -783,13 +783,13 @@
       "Chantay Roache",
       "Roslyn Yepez"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "Princess Mononoke",
-    "desciption": "Ashitaka, a prince of the disappearing Emishi people, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the forest, and Lady Eboshi, who is trying to destroy it. Ashitaka must find a way to bring balance to this conflict.",
+    "description": "Ashitaka, a prince of the disappearing Emishi people, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the forest, and Lady Eboshi, who is trying to destroy it. Ashitaka must find a way to bring balance to this conflict.",
     "poster": "https://image.tmdb.org/t/p/w500/mNqZOtJIQfFQPjo3hmYLIn8Qqhf.jpg",
     "video": "https://www.youtube.com/watch?v=4OiMOHRDs14",
     "duration": 100,
@@ -803,7 +803,7 @@
       "Elias Lemarr",
       "Kasha Kaler"
     ],
-    "caregories": [
+    "categories": [
       "Adventure",
       "Animation",
       "Fantasy"
@@ -811,7 +811,7 @@
   },
   {
     "title": "Ikiru",
-    "desciption": "Kanji Watanabe is a middle-aged man who has worked in the same monotonous bureaucratic position for decades. Learning he has cancer, he starts to look for the meaning of his life.",
+    "description": "Kanji Watanabe is a middle-aged man who has worked in the same monotonous bureaucratic position for decades. Learning he has cancer, he starts to look for the meaning of his life.",
     "poster": "https://image.tmdb.org/t/p/w500/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg",
     "video": "https://www.youtube.com/watch?v=Lc4y-asVh3c",
     "duration": 30,
@@ -825,13 +825,13 @@
       "Cinderella Albertson",
       "Danika Burman"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "Twin Peaks: Northwest Passage",
-    "desciption": "An idiosyncratic FBI agent investigates the murder of a young woman in the even more idiosyncratic town of Twin Peaks. (This standalone version of the series pilot was produced for the European VHS market and has an alternate, closed ending.)",
+    "description": "An idiosyncratic FBI agent investigates the murder of a young woman in the even more idiosyncratic town of Twin Peaks. (This standalone version of the series pilot was produced for the European VHS market and has an alternate, closed ending.)",
     "poster": "https://image.tmdb.org/t/p/w500/2Fb8neVxZtCIXwbJ9DOk6Ra29mV.jpg",
     "video": "https://www.youtube.com/watch?v=Kxms-OtUXS0",
     "duration": 80,
@@ -845,7 +845,7 @@
       "Robin Manuelito",
       "Dan Duropan"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Mystery",
       "Crime",
@@ -854,7 +854,7 @@
   },
   {
     "title": "Harakiri",
-    "desciption": "Aging samurai Hanshiro Tsugumo arrives at the home of Kageyu Saito and asks to commit a ritual suicide on the property, which Saito thinks is a ploy to gain pity and a job. Saito tells Tsugumo of another samurai, Motome Chijiiwa, who threatened suicide as a stratagem, only to be forced to follow through on the task. When Tsugumo reveals that Chijiiwa was his son-in-law, the disclosure sets off a fierce conflict.",
+    "description": "Aging samurai Hanshiro Tsugumo arrives at the home of Kageyu Saito and asks to commit a ritual suicide on the property, which Saito thinks is a ploy to gain pity and a job. Saito tells Tsugumo of another samurai, Motome Chijiiwa, who threatened suicide as a stratagem, only to be forced to follow through on the task. When Tsugumo reveals that Chijiiwa was his son-in-law, the disclosure sets off a fierce conflict.",
     "poster": "https://image.tmdb.org/t/p/w500/k2SE5P8expiI4Pt9qzIX0xJn94E.jpg",
     "video": "https://www.youtube.com/watch?v=Kxms-OtUXS0",
     "duration": 80,
@@ -868,7 +868,7 @@
       "Russ Deckard",
       "Lavera Blaise"
     ],
-    "caregories": [
+    "categories": [
       "Action",
       "Drama",
       "History"
@@ -876,7 +876,7 @@
   },
   {
     "title": "Rear Window",
-    "desciption": "Professional photographer L.B. 'Jeff' Jeffries breaks his leg while getting an action shot at an auto race. Confined to his New York apartment, he spends his time looking out of the rear window observing the neighbors. When he begins to suspect that a man across the courtyard may have murdered his wife, Jeff enlists the help of his high society fashion-consultant girlfriend and his visiting nurse to investigate.",
+    "description": "Professional photographer L.B. 'Jeff' Jeffries breaks his leg while getting an action shot at an auto race. Confined to his New York apartment, he spends his time looking out of the rear window observing the neighbors. When he begins to suspect that a man across the courtyard may have murdered his wife, Jeff enlists the help of his high society fashion-consultant girlfriend and his visiting nurse to investigate.",
     "poster": "https://image.tmdb.org/t/p/w500/oXbT7vlLmZ76kWoHe5XJYuyJUgp.jpg",
     "video": "https://www.youtube.com/watch?v=QsR6WCKXbXk",
     "duration": 400,
@@ -890,7 +890,7 @@
       "Armando Sidener",
       "Tamara Dandridge"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Mystery",
       "Thriller"
@@ -898,7 +898,7 @@
   },
   {
     "title": "Paths of Glory",
-    "desciption": "A commanding officer defends three scapegoats on trial for a failed offensive that occurred within the French Army in 1916.",
+    "description": "A commanding officer defends three scapegoats on trial for a failed offensive that occurred within the French Army in 1916.",
     "poster": "https://image.tmdb.org/t/p/w500/6lMXjI1O1N7XyZEjqIo5wkbrgxg.jpg",
     "video": "https://www.youtube.com/watch?v=yzTwmbXg7pA",
     "duration": 30,
@@ -912,14 +912,14 @@
       "Barrett Philhower",
       "Jenell Hopson"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "War"
     ]
   },
   {
     "title": "Doctor Who: The Day of the Doctor",
-    "desciption": "In 2013, something terrible is awakening in London's National Gallery; in 1562, a murderous plot is afoot in Elizabethan England; and somewhere in space an ancient battle reaches its devastating conclusion. All of reality is at stake as the Doctor's own dangerous past comes back to haunt him.",
+    "description": "In 2013, something terrible is awakening in London's National Gallery; in 1562, a murderous plot is afoot in Elizabethan England; and somewhere in space an ancient battle reaches its devastating conclusion. All of reality is at stake as the Doctor's own dangerous past comes back to haunt him.",
     "poster": "https://image.tmdb.org/t/p/w500/lQy2QVcacuH55k37K9Ox0gw3YpZ.jpg",
     "video": "https://www.youtube.com/watch?v=Mkq8pnvsnQg",
     "duration": 400,
@@ -933,14 +933,14 @@
       "Roslyn Yepez",
       "Jenell Hopson"
     ],
-    "caregories": [
+    "categories": [
       "Adventure",
       "Science Fiction"
     ]
   },
   {
     "title": "Mommy",
-    "desciption": "A peculiar neighbor offers hope to a recent widow who is struggling to raise a teenager who is unpredictable and, sometimes, violent.",
+    "description": "A peculiar neighbor offers hope to a recent widow who is struggling to raise a teenager who is unpredictable and, sometimes, violent.",
     "poster": "https://image.tmdb.org/t/p/w500/tpoaLlY0ZdVGDLToVwkGdWxLHRe.jpg",
     "video": "https://www.youtube.com/watch?v=5O31ny_q6lQ",
     "duration": 100,
@@ -954,13 +954,13 @@
       "Chantay Roache",
       "Christeen Hampton"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "Investigation of a Citizen Above Suspicion",
-    "desciption": "A chief of detectives, homicide section, kills his mistress and deliberately leaves clues to prove his own responsibility for the crime.",
+    "description": "A chief of detectives, homicide section, kills his mistress and deliberately leaves clues to prove his own responsibility for the crime.",
     "poster": "https://image.tmdb.org/t/p/w500/9eVhJgbvAuUuQlBAQtqYQp6j7AR.jpg",
     "video": "https://www.youtube.com/watch?v=Fw1ua8j7SnY",
     "duration": 120,
@@ -974,14 +974,14 @@
       "Elias Lemarr",
       "Tish Lytle"
     ],
-    "caregories": [
+    "categories": [
       "Crime",
       "Drama"
     ]
   },
   {
     "title": "Klaus",
-    "desciption": "When Jesper distinguishes himself as the Postal Academy's worst student, he is sent to Smeerensburg, a small village located on an icy island above the Arctic Circle, where grumpy inhabitants barely exchange words, let alone letters. Jesper is about to give up and abandon his duty as a postman when he meets local teacher Alva and Klaus, a mysterious carpenter who lives alone in a cabin full of handmade toys.",
+    "description": "When Jesper distinguishes himself as the Postal Academy's worst student, he is sent to Smeerensburg, a small village located on an icy island above the Arctic Circle, where grumpy inhabitants barely exchange words, let alone letters. Jesper is about to give up and abandon his duty as a postman when he meets local teacher Alva and Klaus, a mysterious carpenter who lives alone in a cabin full of handmade toys.",
     "poster": "https://image.tmdb.org/t/p/w500/q125RHUDgR4gjwh1QkfYuJLYkL.jpg",
     "video": "https://www.youtube.com/watch?v=364741498",
     "duration": 100,
@@ -995,7 +995,7 @@
       "Tamara Dandridge",
       "Tammera Jensen"
     ],
-    "caregories": [
+    "categories": [
       "Adventure",
       "Animation",
       "Comedy",
@@ -1004,7 +1004,7 @@
   },
   {
     "title": "The Pianist",
-    "desciption": "The true story of pianist Władysław Szpilman's experiences in Warsaw during the Nazi occupation. When the Jews of the city find themselves forced into a ghetto, Szpilman finds work playing in a café; and when his family is deported in 1942, he stays behind, works for a while as a laborer, and eventually goes into hiding in the ruins of the war-torn city.",
+    "description": "The true story of pianist Władysław Szpilman's experiences in Warsaw during the Nazi occupation. When the Jews of the city find themselves forced into a ghetto, Szpilman finds work playing in a café; and when his family is deported in 1942, he stays behind, works for a while as a laborer, and eventually goes into hiding in the ruins of the war-torn city.",
     "poster": "https://image.tmdb.org/t/p/w500/hfMeo073RxKKjZZV4gSGema1yog.jpg",
     "video": "https://www.youtube.com/watch?v=u_jE7-6Uv7E",
     "duration": 30,
@@ -1018,14 +1018,14 @@
       "Gertie Loveridge",
       "Garth Mcentire"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "War"
     ]
   },
   {
     "title": "Dead Poets Society",
-    "desciption": "At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebel against convention and seize the potential of every day, courting the disdain of the stern headmaster.",
+    "description": "At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebel against convention and seize the potential of every day, courting the disdain of the stern headmaster.",
     "poster": "https://image.tmdb.org/t/p/w500/3Ri2GReavqSHqWemlP6HYn8i2P9.jpg",
     "video": "https://www.youtube.com/watch?v=4lj185DaZ_o",
     "duration": 140,
@@ -1039,13 +1039,13 @@
       "Kasha Kaler",
       "Barrett Philhower"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "The Legend of 1900",
-    "desciption": "The story of a virtuoso piano player who lives his entire life aboard an ocean liner. Born and raised on the ship, 1900 (Tim Roth) learned about the outside world through interactions with passengers, never setting foot on land, even for the love of his life. Years later, the ship may be destroyed, and a former band member fears that 1900 may still be aboard, willing to go down with the ship.",
+    "description": "The story of a virtuoso piano player who lives his entire life aboard an ocean liner. Born and raised on the ship, 1900 (Tim Roth) learned about the outside world through interactions with passengers, never setting foot on land, even for the love of his life. Years later, the ship may be destroyed, and a former band member fears that 1900 may still be aboard, willing to go down with the ship.",
     "poster": "https://image.tmdb.org/t/p/w500/wss1PkvHD2cYH6lu5mSa2MgGoi.jpg",
     "video": "https://www.youtube.com/watch?v=2uf-LDlZMFE",
     "duration": 80,
@@ -1059,7 +1059,7 @@
       "Armando Sidener",
       "Danika Burman"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Music",
       "Romance"
@@ -1067,7 +1067,7 @@
   },
   {
     "title": "Persona",
-    "desciption": "A young nurse, Alma, is put in charge of Elisabeth Vogler: an actress who is seemingly healthy in all respects, but will not talk. As they spend time together, Alma speaks to Elisabeth constantly, never receiving any answer. Alma eventually confesses her secrets to a seemingly sympathetic Elisabeth and finds that her own personality is being submerged into Elisabeth's persona.",
+    "description": "A young nurse, Alma, is put in charge of Elisabeth Vogler: an actress who is seemingly healthy in all respects, but will not talk. As they spend time together, Alma speaks to Elisabeth constantly, never receiving any answer. Alma eventually confesses her secrets to a seemingly sympathetic Elisabeth and finds that her own personality is being submerged into Elisabeth's persona.",
     "poster": "https://image.tmdb.org/t/p/w500/cjAnlvCrp9ZY7atASUsxRrhve7o.jpg",
     "video": "https://www.youtube.com/watch?v=XZsU_ACYSAA",
     "duration": 140,
@@ -1081,13 +1081,13 @@
       "Tamara Dandridge",
       "Phylicia Castile"
     ],
-    "caregories": [
+    "categories": [
       "Drama"
     ]
   },
   {
     "title": "The Best of Youth",
-    "desciption": "Spanning four decades, from the chaotic 1960s to the present, director Marco Tullio Giordana's passionate epic 'La Meglio Gioventu' follows two Italian brothers through some of the most tumultuous events of recent Italian history.",
+    "description": "Spanning four decades, from the chaotic 1960s to the present, director Marco Tullio Giordana's passionate epic 'La Meglio Gioventu' follows two Italian brothers through some of the most tumultuous events of recent Italian history.",
     "poster": "https://image.tmdb.org/t/p/w500/fWi5OVdODBYsNXZTmVbvV1ROMhl.jpg",
     "video": "https://www.youtube.com/watch?v=eIozQwKTxp0",
     "duration": 400,
@@ -1101,14 +1101,14 @@
       "Kasha Kaler",
       "Christeen Hampton"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Romance"
     ]
   },
   {
     "title": "My Friends",
-    "desciption": "Like in many other Monicelli movies, the main theme of Amici miei is friendship, seen from a rather bitter point of view. It tells the story of four middle-aged friends in Florence who organize together idle pranks (called zingarate, \"gypsy shenanigans\") in a continuous attempt to prolong childhood during their adult life.",
+    "description": "Like in many other Monicelli movies, the main theme of Amici miei is friendship, seen from a rather bitter point of view. It tells the story of four middle-aged friends in Florence who organize together idle pranks (called zingarate, \"gypsy shenanigans\") in a continuous attempt to prolong childhood during their adult life.",
     "poster": "https://image.tmdb.org/t/p/w500/2n6BSqurUOVBlsigtGAfedBzn53.jpg",
     "video": "https://www.youtube.com/watch?v=Kxms-OtUXS0",
     "duration": 80,
@@ -1122,13 +1122,13 @@
       "Garth Mcentire",
       "Elaina Mary"
     ],
-    "caregories": [
+    "categories": [
       "Comedy"
     ]
   },
   {
     "title": "The Lord of the Rings: The Fellowship of the Ring",
-    "desciption": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+    "description": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
     "poster": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
     "video": "https://www.youtube.com/watch?v=V75dMMIW2B4",
     "duration": 100,
@@ -1142,7 +1142,7 @@
       "Christeen Hampton",
       "Danika Burman"
     ],
-    "caregories": [
+    "categories": [
       "Action",
       "Adventure",
       "Fantasy"
@@ -1150,7 +1150,7 @@
   },
   {
     "title": "Modern Times",
-    "desciption": "The Tramp struggles to live in modern industrial society with the help of a young homeless woman.",
+    "description": "The Tramp struggles to live in modern industrial society with the help of a young homeless woman.",
     "poster": "https://image.tmdb.org/t/p/w500/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
     "video": "https://www.youtube.com/watch?v=kNIh3C1k4aM",
     "duration": 30,
@@ -1164,14 +1164,14 @@
       "Roslyn Yepez",
       "Tamara Dandridge"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "Comedy"
     ]
   },
   {
     "title": "Portrait of a Lady on Fire",
-    "desciption": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
+    "description": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
     "poster": "https://image.tmdb.org/t/p/w500/3NTEMlG5mQdIAlKDl3AJG0rX29Z.jpg",
     "video": "https://www.youtube.com/watch?v=R-fQPTwma9o",
     "duration": 100,
@@ -1185,7 +1185,7 @@
       "Phylicia Castile",
       "Phylicia Castile"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "History",
       "Romance"
@@ -1193,7 +1193,7 @@
   },
   {
     "title": "Come and See",
-    "desciption": "The invasion of a village in Byelorussia by German forces sends young Florya into the forest to join the weary Resistance fighters, against his family's wishes. There he meets a girl, Glasha, who accompanies him back to his village. On returning home, Florya finds his family and fellow peasants massacred. His continued survival amidst the brutal debris of war becomes increasingly nightmarish, a battle between despair and hope.",
+    "description": "The invasion of a village in Byelorussia by German forces sends young Florya into the forest to join the weary Resistance fighters, against his family's wishes. There he meets a girl, Glasha, who accompanies him back to his village. On returning home, Florya finds his family and fellow peasants massacred. His continued survival amidst the brutal debris of war becomes increasingly nightmarish, a battle between despair and hope.",
     "poster": "https://image.tmdb.org/t/p/w500/ftANtihdah4wdrCOIZXp9TGjQtJ.jpg",
     "video": "https://www.youtube.com/watch?v=-oFlKz6V_-4",
     "duration": 180,
@@ -1207,7 +1207,7 @@
       "Barrett Philhower",
       "Tammera Jensen"
     ],
-    "caregories": [
+    "categories": [
       "Drama",
       "History",
       "War"
@@ -1215,7 +1215,7 @@
   },
   {
     "title": "Léon: The Professional",
-    "desciption": "Léon, the top hit man in New York, has earned a rep as an effective \"cleaner\". But when his next-door neighbors are wiped out by a loose-cannon DEA agent, he becomes the unwilling custodian of 12-year-old Mathilda. Before long, Mathilda's thoughts turn to revenge, and she considers following in Léon's footsteps.",
+    "description": "Léon, the top hit man in New York, has earned a rep as an effective \"cleaner\". But when his next-door neighbors are wiped out by a loose-cannon DEA agent, he becomes the unwilling custodian of 12-year-old Mathilda. Before long, Mathilda's thoughts turn to revenge, and she considers following in Léon's footsteps.",
     "poster": "https://image.tmdb.org/t/p/w500/gE8S02QUOhVnAmYu4tcrBlMTujz.jpg",
     "video": "https://www.youtube.com/watch?v=aNQqoExfQsg",
     "duration": 210,
@@ -1229,7 +1229,7 @@
       "Debbra Delker",
       "Christeen Hampton"
     ],
-    "caregories": [
+    "categories": [
       "Crime",
       "Drama",
       "Action"
@@ -1237,7 +1237,7 @@
   },
   {
     "title": "High and Low",
-    "desciption": "An executive of a shoe company becomes a victim of extortion when his chauffeur's son is kidnapped and held for ransom.",
+    "description": "An executive of a shoe company becomes a victim of extortion when his chauffeur's son is kidnapped and held for ransom.",
     "poster": "https://image.tmdb.org/t/p/w500/tgNjemQPG96uIezpiUiXFcer5ga.jpg",
     "video": "https://www.youtube.com/watch?v=wcALFnBJ54c",
     "duration": 30,
@@ -1251,7 +1251,7 @@
       "Gertie Loveridge",
       "Dan Duropan"
     ],
-    "caregories": [
+    "categories": [
       "Crime",
       "Drama",
       "Mystery",
@@ -1260,7 +1260,7 @@
   },
   {
     "title": "Se7en",
-    "desciption": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+    "description": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
     "poster": "https://image.tmdb.org/t/p/w500/8zw8IL4zEPjkh8Aysdcd0FwGMb0.jpg",
     "video": "https://www.youtube.com/watch?v=SpKbZ_3zlb0",
     "duration": 100,
@@ -1274,7 +1274,7 @@
       "Kasha Kaler",
       "Tammera Jensen"
     ],
-    "caregories": [
+    "categories": [
       "Crime",
       "Mystery",
       "Thriller"

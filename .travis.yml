@@ -1,3 +1,7 @@
 language: java
 
+before_install: rm ~/.m2/settings.xml
+
+before_script: mvn ktlint:check
+
 script: mvn clean test

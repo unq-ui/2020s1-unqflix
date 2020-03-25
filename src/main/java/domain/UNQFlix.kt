@@ -26,7 +26,7 @@ class UNQFlix(
             ?: run { categories.add(category) }
     }
 
-    fun addMovie(movie : Movie) {
+    fun addMovie(movie: Movie) {
         movies.firstOrNull { it.title === movie.title }
             ?.let { throw ExistException("Movie", "title", movie.title) }
             ?: run { movies.add(movie) }
@@ -41,17 +41,17 @@ class UNQFlix(
     fun addSeason(idSerie: String, season: Season) {
         series.find { it.id == idSerie }
             ?.addSeason(season)
-            ?: run { throw NotFoundException("Serie", "id", idSerie)}
+            ?: run { throw NotFoundException("Serie", "id", idSerie) }
     }
 
     fun addChapter(idSerie: String, idSeason: String, chapter: Chapter) {
         series.find { it.id == idSerie }
             ?.addChapter(idSeason, chapter)
-            ?: run { throw NotFoundException("Serie", "id", idSerie)}
+            ?: run { throw NotFoundException("Serie", "id", idSerie) }
     }
 
     fun addBanner(banner: Content) {
-        if(banners.size == 5) {
+        if (banners.size == 5) {
             banners.remove(banners.first())
         }
         banners.add(banner)
@@ -64,7 +64,7 @@ class UNQFlix(
     fun deleteSeason(idSerie: String, idSeason: String) {
         series.find { it.id == idSerie }
             ?.deleteSeason(idSeason)
-            ?: run { throw NotFoundException("Serie", "id", idSerie)}
+            ?: run { throw NotFoundException("Serie", "id", idSerie) }
     }
 
     fun deleteChapter(idSerie: String, idSeason: String, idChapter: String) {
@@ -88,12 +88,12 @@ class UNQFlix(
         user.addOrDeleteFav(content)
     }
 
-    private fun <T: Id> getById(list: MutableCollection<T>, id: String): T =
+    private fun <T : Id> getById(list: MutableCollection<T>, id: String): T =
         list.find { it.id == id } ?: throw NotFoundException("Unknown", "id", id)
 
     private fun getContentById(id: String): Content {
-        if(id.startsWith("mov")) return getById(movies, id)
-        if(id.startsWith("ser")) return getById(series, id)
+        if (id.startsWith("mov")) return getById(movies, id)
+        if (id.startsWith("ser")) return getById(series, id)
         throw NotFoundException("Content", "id", id)
     }
 }

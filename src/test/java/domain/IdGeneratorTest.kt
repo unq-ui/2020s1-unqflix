@@ -1,9 +1,18 @@
 package domain
 
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Assertions.*
 
 class IdGeneratorTest {
+    companion object {
+        @BeforeAll
+        @JvmStatic
+        internal fun initAll() {
+            IdGenerator.resetAll()
+        }
+    }
+
     @Test
     fun userIdTest() {
         assertEquals(0, IdGenerator.currentUserId)
