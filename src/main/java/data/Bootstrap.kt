@@ -75,26 +75,26 @@ private fun addAllSeries(unqflix: UNQFlix) {
                 it.poster,
                 getRandomState(),
                 lookUpCategories(unqflix, it.categories),
-                getSeasons(unqflix, it.seasons),
+                getSeasons(it.seasons),
                 mutableListOf()
             )
         )
     }
 }
 
-private fun getSeasons(unqflix: UNQFlix, seasons: List<SeasonData>): MutableList<Season> {
+private fun getSeasons(seasons: List<SeasonData>): MutableList<Season> {
     return seasons.map {
         Season(
             idGenerator.nextSeasonId(),
             it.title,
             it.description,
             it.poster,
-            getChapters(unqflix, it.chapters)
+            getChapters(it.chapters)
         )
     }.toMutableList()
 }
 
-private fun getChapters(unqflix: UNQFlix, chapters: List<EpisodeData>): MutableList<Chapter> {
+private fun getChapters(chapters: List<EpisodeData>): MutableList<Chapter> {
     return chapters.map {
         Chapter(
             idGenerator.nextChapterId(),
