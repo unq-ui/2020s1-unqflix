@@ -28,7 +28,7 @@ Agregar la dependencia:
 <dependency>
     <groupId>com.github.unq-ui</groupId>
     <artifactId>unqflix</artifactId>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
