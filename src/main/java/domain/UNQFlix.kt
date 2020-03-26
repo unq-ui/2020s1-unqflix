@@ -1,5 +1,7 @@
 package domain
 
+import support.*
+
 class UNQFlix(
     val movies: MutableList<Movie> = mutableListOf(),
     val series: MutableList<Serie> = mutableListOf(),
@@ -71,10 +73,6 @@ class UNQFlix(
         val user = getById(users, idUser)
         val content = getContentById(idContent)
         user.addOrDeleteFav(content)
-    }
-
-    private fun <T : Id> addToList(item: T, items: MutableList<T>, compare: (T) -> Boolean): Boolean? {
-        return if (items.none(compare)) items.add(item) else null
     }
 
     private fun addToSerie(idSerie: String, addBlock: (s: Serie) -> Boolean): Boolean? {

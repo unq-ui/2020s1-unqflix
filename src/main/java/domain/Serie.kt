@@ -1,5 +1,7 @@
 package domain
 
+import support.addToList
+
 data class Serie(
     override val id: String,
     override var title: String,
@@ -12,9 +14,8 @@ data class Serie(
 ) : Content, Id {
 
     fun addSeason(season: Season): Boolean {
-        return seasons.firstOrNull { it.title === season.title }
-            ?.let { throw ExistsException("Season", "title", season.title) }
-            ?: run { seasons.add(season) }
+        return addToList(season, seasons) { it.title == season.title }
+            ?: throw SeasonExistsException(season)
     }
 
     fun addChapter(idSeason: String, chapter: Chapter): Boolean {
