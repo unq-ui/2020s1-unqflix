@@ -1,3 +1,3 @@
 package domain
 
-data class Category(val name: String)
+data class Category(override val id: String, val name: String) : Id

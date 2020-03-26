@@ -8,39 +8,31 @@ class UNQFlix(
     val banners: MutableList<Content> = mutableListOf()
 ) {
     fun addUser(user: User): Boolean {
-        return users.firstOrNull { it.email === user.email }
-            ?.let { throw ExistsException("User", "email", user.email) }
-            ?: run { users.add(user) }
+        return addToList(user, users) { it.email == user.email }
+            ?: throw UserExistsException(user)
     }
 
     fun addCategory(category: Category): Boolean {
-        return categories.firstOrNull { it.name === category.name }
-            ?.let { throw ExistsException("Category", "name", category.name) }
-            ?: run { categories.add(category) }
+        return addToList(category, categories) { it.name == category.name }
+            ?: throw CategoryExistsException(category)
     }
 
     fun addMovie(movie: Movie): Boolean {
-        return movies.firstOrNull { it.title === movie.title }
-            ?.let { throw ExistsException("Movie", "title", movie.title) }
-            ?: run { movies.add(movie) }
+        return addToList(movie, movies) { it.title == movie.title }
+            ?: throw MovieExistsException(movie)
     }
 
     fun addSerie(serie: Serie): Boolean {
-        return series.firstOrNull { it.title === serie.title }
-            ?.let { throw ExistsException("Serie", "title", serie.title) }
-            ?: run { series.add(serie) }
+        return addToList(serie, series) { it.title == serie.title }
+            ?: throw SerieExistsException(serie)
     }
 
-    fun addSeason(idSerie: String, season: Season): Boolean {
-        return series.find { it.id == idSerie }
-            ?.addSeason(season)
-            ?: run { throw NotFoundException("Serie", "id", idSerie) }
+    fun addSeason(idSerie: String, season: Season): Boolean? {
+        return addToSerie(idSerie) { it.addSeason(season) }
     }
 
-    fun addChapter(idSerie: String, idSeason: String, chapter: Chapter): Boolean {
-        return series.find { it.id == idSerie }
-            ?.addChapter(idSeason, chapter)
-            ?: run { throw NotFoundException("Serie", "id", idSerie) }
+    fun addChapter(idSerie: String, idSeason: String, chapter: Chapter): Boolean? {
+        return addToSerie(idSerie) { it.addChapter(idSeason, chapter) }
     }
 
     fun addBanner(banner: Content): Boolean {
@@ -79,6 +71,16 @@ class UNQFlix(
         val user = getById(users, idUser)
         val content = getContentById(idContent)
         user.addOrDeleteFav(content)
+    }
+
+    private fun <T : Id> addToList(item: T, items: MutableList<T>, compare: (T) -> Boolean): Boolean? {
+        return if (items.none(compare)) items.add(item) else null
+    }
+
+    private fun addToSerie(idSerie: String, addBlock: (s: Serie) -> Boolean): Boolean? {
+        return series.find { it.id == idSerie }
+            ?.let { addBlock(it) }
+            ?: throw SerieNotFoundException(idSerie)
     }
 
     private fun <T : Id> getById(list: MutableCollection<T>, id: String): T =

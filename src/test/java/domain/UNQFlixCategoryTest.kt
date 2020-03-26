@@ -10,7 +10,7 @@ class UNQFlixCategoryTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.categories.size, 0)
 
-        val category = Category("Terror")
+        val category = Category("1", "Terror")
         unQflix.addCategory(category)
 
         assertEquals(unQflix.categories.size, 1)
@@ -22,7 +22,7 @@ class UNQFlixCategoryTest {
         val unQflix = UNQFlix()
         assertEquals(unQflix.categories.size, 0)
 
-        val category = Category("Terror")
+        val category = Category("1", "Terror")
         unQflix.addCategory(category)
         assertThrows<ExistsException> { unQflix.addCategory(category) }
     }
