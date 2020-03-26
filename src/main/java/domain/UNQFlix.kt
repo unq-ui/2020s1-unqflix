@@ -9,29 +9,16 @@ class UNQFlix(
     val users: MutableList<User> = mutableListOf(),
     val banners: MutableList<Content> = mutableListOf()
 ) {
-    fun addUser(user: User): Boolean {
-        return addToList(user, users) { it.email == user.email }
-            ?: throw UserExistsException(user)
-    }
 
-    fun addCategory(category: Category): Boolean {
-        return addToList(category, categories) { it.name == category.name }
-            ?: throw CategoryExistsException(category)
-    }
+    fun addUser(user: User) = addToList(user, users) { it.email == user.email }
 
-    fun addMovie(movie: Movie): Boolean {
-        return addToList(movie, movies) { it.title == movie.title }
-            ?: throw MovieExistsException(movie)
-    }
+    fun addMovie(movie: Movie) = addToList(movie, movies) { it.title == movie.title }
 
-    fun addSerie(serie: Serie): Boolean {
-        return addToList(serie, series) { it.title == serie.title }
-            ?: throw SerieExistsException(serie)
-    }
+    fun addSerie(serie: Serie) = addToList(serie, series) { it.title == serie.title }
 
-    fun addSeason(idSerie: String, season: Season): Boolean? {
-        return addToSerie(idSerie) { it.addSeason(season) }
-    }
+    fun addCategory(category: Category) = addToList(category, categories) { it.name == category.name }
+
+    fun addSeason(idSerie: String, season: Season) = addToSerie(idSerie) { it.addSeason(season) }
 
     fun addChapter(idSerie: String, idSeason: String, chapter: Chapter): Boolean? {
         return addToSerie(idSerie) { it.addChapter(idSeason, chapter) }
@@ -75,7 +62,7 @@ class UNQFlix(
         user.addOrDeleteFav(content)
     }
 
-    private fun addToSerie(idSerie: String, addBlock: (s: Serie) -> Boolean): Boolean? {
+    private fun addToSerie(idSerie: String, addBlock: (s: Serie) -> Boolean?): Boolean {
         return series.find { it.id == idSerie }
             ?.let { addBlock(it) }
             ?: throw SerieNotFoundException(idSerie)

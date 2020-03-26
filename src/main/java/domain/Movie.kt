@@ -12,4 +12,7 @@ data class Movie(
     var directors: MutableList<String> = mutableListOf(),
     var categories: MutableList<Category> = mutableListOf(),
     override var relatedContent: MutableList<Content> = mutableListOf()
-) : Content, Id
+) : Content, Id {
+    override fun idKey() = "title"
+    override fun idValue() = title
+}

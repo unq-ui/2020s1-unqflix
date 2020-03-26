@@ -10,10 +10,10 @@ data class Season(
     var chapters: MutableList<Chapter> = mutableListOf()
 ) : Id {
 
-    fun addChapter(chapter: Chapter): Boolean {
-        return addToList(chapter, chapters) { it.title == chapter.title }
-            ?: throw ChapterExistsException(chapter)
-    }
+    override fun idKey() = "title"
+    override fun idValue() = title
+
+    fun addChapter(chapter: Chapter) = addToList(chapter, chapters) { it.title == chapter.title }
 
     fun deleteChapter(idChapter: String) = chapters.removeIf { it.id == idChapter }
 }

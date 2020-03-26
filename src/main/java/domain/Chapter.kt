@@ -7,4 +7,7 @@ data class Chapter(
     var duration: Int,
     var video: String,
     var thumbnail: String
-) : Id
+) : Id {
+    override fun idKey() = "title"
+    override fun idValue() = title
+}

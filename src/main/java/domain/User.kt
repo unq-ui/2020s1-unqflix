@@ -10,6 +10,8 @@ data class User(
     val favorites: MutableCollection<Content> = mutableListOf(),
     val lastSeen: MutableCollection<Content> = mutableListOf()
 ) : Id {
+    override fun idKey() = "email"
+    override fun idValue() = email
 
     fun addLastSeen(content: Content) {
         lastSeen.find { it.id == content.id }

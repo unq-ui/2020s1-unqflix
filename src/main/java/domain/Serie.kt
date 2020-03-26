@@ -13,10 +13,10 @@ data class Serie(
     override var relatedContent: MutableList<Content> = mutableListOf()
 ) : Content, Id {
 
-    fun addSeason(season: Season): Boolean {
-        return addToList(season, seasons) { it.title == season.title }
-            ?: throw SeasonExistsException(season)
-    }
+    override fun idKey() = "title"
+    override fun idValue() = title
+
+    fun addSeason(season: Season) = addToList(season, seasons) { it.title == season.title }
 
     fun addChapter(idSeason: String, chapter: Chapter): Boolean {
         return seasons.find { it.id == idSeason }
