@@ -10,13 +10,10 @@ class UNQFlix(
     val banners: MutableList<Content> = mutableListOf()
 ) {
 
-    fun addUser(user: User) = addToList(user, users) { it.email == user.email }
-
-    fun addMovie(movie: Movie) = addToList(movie, movies) { it.title == movie.title }
-
-    fun addSerie(serie: Serie) = addToList(serie, series) { it.title == serie.title }
-
-    fun addCategory(category: Category) = addToList(category, categories) { it.name == category.name }
+    fun addUser(user: User) = addToList(user, users)
+    fun addMovie(movie: Movie) = addToList(movie, movies)
+    fun addSerie(serie: Serie) = addToList(serie, series)
+    fun addCategory(category: Category) = addToList(category, categories)
 
     fun addSeason(idSerie: String, season: Season) = addToSerie(idSerie) { it.addSeason(season) }
 
@@ -36,15 +33,11 @@ class UNQFlix(
     fun deleteSerie(serieId: String) = series.removeIf { it.id == serieId }
 
     fun deleteSeason(idSerie: String, idSeason: String): Boolean {
-        return series.find { it.id == idSerie }
-            ?.deleteSeason(idSeason)
-            ?: run { throw NotFoundException("Serie", "id", idSerie) }
+        return actionToSerie(idSerie) { it.deleteSeason(idSeason) }
     }
 
     fun deleteChapter(idSerie: String, idSeason: String, idChapter: String): Boolean {
-        return series.find { it.id == idSerie }
-            ?.deleteChapter(idSeason, idChapter)
-            ?: run { throw NotFoundException("Serie", "id", idSerie) }
+        return actionToSerie(idSerie) { it.deleteChapter(idSeason, idChapter) }
     }
 
     fun searchMovies(text: String) = movies.filter { it.title.contains(text, true) }
@@ -75,5 +68,9 @@ class UNQFlix(
         if (id.startsWith("mov")) return getById(movies, id)
         if (id.startsWith("ser")) return getById(series, id)
         throw NotFoundException("Content", "id", id)
+    }
+
+    private fun actionToSerie(idSerie: String, action: (Serie) -> Boolean): Boolean {
+        return actionToList(idSerie, series, "Serie", action)
     }
 }

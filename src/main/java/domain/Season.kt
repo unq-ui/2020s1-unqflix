@@ -13,7 +13,7 @@ data class Season(
     override fun idKey() = "title"
     override fun idValue() = title
 
-    fun addChapter(chapter: Chapter) = addToList(chapter, chapters) { it.title == chapter.title }
+    fun addChapter(chapter: Chapter) = addToList(chapter, chapters)
 
     fun deleteChapter(idChapter: String) = chapters.removeIf { it.id == idChapter }
 }
