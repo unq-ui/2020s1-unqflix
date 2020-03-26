@@ -1,7 +1,6 @@
 package domain
 
-import support.addToList
-import support.actionToList
+import support.*
 
 data class Serie(
     override val id: String,
@@ -19,17 +18,11 @@ data class Serie(
 
     fun addSeason(season: Season) = addToList(season, seasons)
 
-    fun addChapter(idSeason: String, chapter: Chapter): Boolean {
-        return actionToSeason(idSeason) { it.addChapter(chapter) }
-    }
-
     fun deleteSeason(idSeason: String) = seasons.removeIf { it.id == idSeason }
 
-    fun deleteChapter(idSeason: String, idChapter: String): Boolean {
-        return actionToSeason(idSeason) { it.deleteChapter(idChapter) }
-    }
+    fun addChapter(idSeason: String, chapter: Chapter) = getSeason(idSeason).addChapter(chapter)
 
-    private fun actionToSeason(idSeason: String, action: (Season) -> Boolean): Boolean {
-        return actionToList(idSeason, seasons, "Season", action)
-    }
+    fun deleteChapter(idSeason: String, idChapter: String) = getSeason(idSeason).deleteChapter(idChapter)
+
+    private fun getSeason(idSeason: String): Season = itemFromList(idSeason, seasons, "Season")
 }

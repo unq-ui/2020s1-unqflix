@@ -32,33 +32,38 @@ class UNQFlix(
     fun deleteMovie(movieId: String) = movies.removeIf { it.id == movieId }
     fun deleteSerie(serieId: String) = series.removeIf { it.id == serieId }
 
-    fun deleteSeason(idSerie: String, idSeason: String): Boolean {
-        return actionToSerie(idSerie) { it.deleteSeason(idSeason) }
-    }
+    fun deleteSeason(idSerie: String, idSeason: String) = getSerie(idSerie).deleteSeason(idSeason)
 
-    fun deleteChapter(idSerie: String, idSeason: String, idChapter: String): Boolean {
-        return actionToSerie(idSerie) { it.deleteChapter(idSeason, idChapter) }
-    }
+    fun deleteChapter(
+        idSerie: String,
+        idSeason: String,
+        idChapter: String
+    ) = getSerie(idSerie).deleteChapter(idSeason, idChapter)
 
-    fun searchMovies(text: String) = movies.filter { it.title.contains(text, true) }
-    fun searchSeries(text: String) = series.filter { it.title.contains(text, true) }
+    fun searchMovies(text: String) = searchIn(text, movies)
+
+    fun searchSeries(text: String) = searchIn(text, series)
 
     fun addLastSeen(idUser: String, idContent: String) {
-        val user = getById(users, idUser)
-        val content = getContentById(idContent)
-        user.addLastSeen(content)
+        addUserContent(idUser, idContent) { user, content -> user.addLastSeen(content) }
     }
 
     fun addOrDeleteFav(idUser: String, idContent: String) {
-        val user = getById(users, idUser)
-        val content = getContentById(idContent)
-        user.addOrDeleteFav(content)
+        addUserContent(idUser, idContent) { user, content -> user.addOrDeleteFav(content) }
     }
 
     private fun addToSerie(idSerie: String, addBlock: (s: Serie) -> Boolean?): Boolean {
         return series.find { it.id == idSerie }
             ?.let { addBlock(it) }
             ?: throw SerieNotFoundException(idSerie)
+    }
+
+    private fun getSerie(idSerie: String): Serie = itemFromList(idSerie, series, "Serie")
+
+    private fun addUserContent(idUser: String, idContent: String, action: (User, Content) -> Unit) {
+        val user = getById(users, idUser)
+        val content = getContentById(idContent)
+        action(user, content)
     }
 
     private fun <T : Id> getById(list: MutableCollection<T>, id: String): T =
@@ -68,9 +73,5 @@ class UNQFlix(
         if (id.startsWith("mov")) return getById(movies, id)
         if (id.startsWith("ser")) return getById(series, id)
         throw NotFoundException("Content", "id", id)
-    }
-
-    private fun actionToSerie(idSerie: String, action: (Serie) -> Boolean): Boolean {
-        return actionToList(idSerie, series, "Serie", action)
     }
 }
