@@ -16,7 +16,7 @@ private fun getCategories(): MutableList<Category> {
     val categoriesString = readFile("genres.json")
     val categoryDataType = object : TypeToken<Array<CategoryData>>() {}.type
     val categories: Array<CategoryData> = Gson().fromJson(categoriesString, categoryDataType)
-    return categories.map { Category(it.id.toString(), it.name) }.toMutableList()
+    return categories.map { Category(idGenerator.nextCategoryId(), it.name) }.toMutableList()
 }
 
 private fun lookUpCategories(unqflix: UNQFlix, categories: List<String>): MutableList<Category> {

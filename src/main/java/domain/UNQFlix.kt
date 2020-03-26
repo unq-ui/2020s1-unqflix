@@ -15,10 +15,10 @@ class UNQFlix(
     fun addSerie(serie: Serie) = addToList(serie, series)
     fun addCategory(category: Category) = addToList(category, categories)
 
-    fun addSeason(idSerie: String, season: Season) = addToSerie(idSerie) { it.addSeason(season) }
+    fun addSeason(idSerie: String, season: Season) = getSerie(idSerie).addSeason(season)
 
-    fun addChapter(idSerie: String, idSeason: String, chapter: Chapter): Boolean? {
-        return addToSerie(idSerie) { it.addChapter(idSeason, chapter) }
+    fun addChapter(idSerie: String, idSeason: String, chapter: Chapter): Boolean {
+        return getSerie(idSerie).addChapter(idSeason, chapter)
     }
 
     fun addBanner(banner: Content): Boolean {
@@ -52,12 +52,6 @@ class UNQFlix(
         addUserContent(idUser, idContent) { user, content -> user.addOrDeleteFav(content) }
     }
 
-    private fun addToSerie(idSerie: String, addBlock: (s: Serie) -> Boolean?): Boolean {
-        return series.find { it.id == idSerie }
-            ?.let { addBlock(it) }
-            ?: throw SerieNotFoundException(idSerie)
-    }
-
     private fun getSerie(idSerie: String): Serie = itemFromList(idSerie, series, "Serie")
 
     private fun addUserContent(idUser: String, idContent: String, action: (User, Content) -> Unit) {
@@ -65,9 +59,6 @@ class UNQFlix(
         val content = getContentById(idContent)
         action(user, content)
     }
-
-    private fun <T : Id> getById(list: MutableCollection<T>, id: String): T =
-        list.find { it.id == id } ?: throw NotFoundException("Unknown", "id", id)
 
     private fun getContentById(id: String): Content {
         if (id.startsWith("mov")) return getById(movies, id)

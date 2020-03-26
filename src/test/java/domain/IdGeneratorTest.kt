@@ -50,4 +50,13 @@ class IdGeneratorTest {
         assertEquals("cha_3", idGenerator.nextChapterId())
         assertEquals("cha_4", idGenerator.nextChapterId())
     }
+
+    @Test
+    fun categoryIdTest() {
+        assertEquals(0, idGenerator.currentCategoryId)
+        assertEquals("cat_1", idGenerator.nextCategoryId())
+        assertEquals("cat_2", idGenerator.nextCategoryId())
+        assertEquals("cat_3", idGenerator.nextCategoryId())
+        assertEquals("cat_4", idGenerator.nextCategoryId())
+    }
 }

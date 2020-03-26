@@ -11,10 +11,13 @@ class IdGenerator {
         private set
     var currentChapterId = 0
         private set
+    var currentCategoryId = 0
+        private set
 
     fun nextUserId(): String = "u_${++currentUserId}"
     fun nextMovieId(): String = "mov_${++currentMovieId}"
     fun nextSerieId(): String = "ser_${++currentSerieId}"
     fun nextSeasonId(): String = "sea_${++currentSeasonId}"
     fun nextChapterId(): String = "cha_${++currentChapterId}"
+    fun nextCategoryId(): String = "cat_${++currentCategoryId}"
 }
